@@ -77,9 +77,43 @@ textarea {
   color: #000;
   padding: 0.2em 0; }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/* Fonts & Colors */
+/* Mobile Styles */
+body {
+  background: #f4f3ee;
+  color: #1b1b1c;
+  font: 400 14px "Chivo", sans-serif; }
+
+h1, h2, h3 {
+  font: "Archivo Black", sans-serif;
+  text-transform: uppercase; }
+
+.fade {
+  display: none; }
+
+.content-wrapper {
+  margin: 0px 25px; }
+
+/* Main Content */
+.content-container {
+  border: 10px solid #1e555c;
+  margin: 0 auto;
+  margin-top: 150px;
+  max-width: 320px; }
+  .content-container h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-left: 20px; }
+  .content-container span {
+    display: block; }
+
+aside p {
+  margin: 0 auto;
+  margin-top: 25px;
+  max-width: 320px;
+  text-align: justify;
+  text-transform: uppercase; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

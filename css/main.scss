@@ -94,9 +94,58 @@ textarea {
   padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/* Fonts & Colors */ 
+$black: #1b1b1c;
+$blue: #1e555c;
+$light-blue: #d1ecf0;
+$red: #720026;
+$white: #f4f3ee;
+
+$body-font: 'Chivo', sans-serif;
+$heading-font: 'Archivo Black', sans-serif;
+$bold: 700;
+$light: 300;
+$regular: 400;
+/* Mobile Styles */ 
+body {
+    background: $white;
+    color: $black;
+    font: $regular 14px $body-font;
+}
+h1, h2, h3 {
+    font: $heading-font;
+    text-transform: uppercase;
+}
+.fade {
+    display: none;
+}
+.content-wrapper {
+    margin: 0px 25px;
+}
+/* Main Content */
+.content-container {
+    border: 10px solid $blue;
+    margin: 0 auto;
+    margin-top: 150px;
+    max-width: 320px;
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        padding-left: 20px;
+    }
+    span {
+        display: block;
+    }
+}
+aside {
+    p {
+        margin: 0 auto;
+        margin-top: 25px;
+        max-width: 320px;
+        text-align: justify;
+        text-transform: uppercase;
+    }
+}
 
 /* ==========================================================================
    Helper classes

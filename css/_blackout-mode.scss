@@ -1,0 +1,22 @@
+@import "variables";
+@mixin link-transition {
+    -webkit-transition: 1s color;
+    transition: 1s color;
+}
+
+body.blackout-mode {
+    background: $black;
+    color: $white;
+    a:link,
+    a:visited {
+        color: $white;
+    }
+    a:hover {
+        border-bottom: 2px solid $blue;
+        color: $orange;
+        @include link-transition;
+    }
+    .content-container {
+        border: 10px solid $blue;
+    }
+}

@@ -15,9 +15,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="light-mode" id="body">
   <main class="fade">
     <div class="content-wrapper">
+      <article class="toggle-mode">
+        <p id="toggle-description">Light Mode</p>
+        <label class="switch">
+          <input type="checkbox" id="mode-toggle">
+          <span class="slider round" onclick=toggle()></span>
+        </label>
+      </article>
       <article class="content-container">
         <h1>Protect
           <span>Black</span>
@@ -25,7 +32,9 @@
         </h1>
       </article>
       <aside>
-        <p>An open source collection of resources in the interest of protecting black lives.</p>
+        <p>An open source collection of resources in the interest of protecting black lives.
+        <br><br><br><br>
+        <span>This website is currently under construction. If you have resources you would like to contribute, please reach out to the <a href="https://twitter.com/emmydoesit" target="_blank">creator</a> with your contribution.</span></p>
       </aside>
     </div>
   </main>

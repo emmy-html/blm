@@ -1,0 +1,22 @@
+@import "variables";
+@mixin link-transition {
+    -webkit-transition: 1s color;
+    transition: 1s color;
+}
+
+.light-mode {
+    background: $white;
+    color: $black;
+    a:link,
+    a:visited {
+        color: $black;
+    }
+    a:hover {
+        border-bottom: 2px solid $blue;
+        color: $red;
+        @include link-transition;
+    }
+    .content-container {
+        border: 10px solid $blue;
+    }
+}

@@ -92,6 +92,8 @@ body.blackout-mode {
     transition: 1s color; }
   body.blackout-mode .content-container {
     border: 10px solid #1e555c; }
+    body.blackout-mode .content-container span.black-lives {
+      color: #ff9b54; }
 
 /* Fonts & Colors */
 .light-mode {
@@ -107,6 +109,8 @@ body.blackout-mode {
     transition: 1s color; }
   .light-mode .content-container {
     border: 10px solid #1e555c; }
+    .light-mode .content-container span.black-lives {
+      color: #720026; }
 
 /* Fonts & Colors */
 /* Mobile Styles */

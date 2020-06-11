@@ -18,5 +18,8 @@ body.blackout-mode {
     }
     .content-container {
         border: 10px solid $blue;
+        span.black-lives {
+            color: $orange;
+        }
     }
 }

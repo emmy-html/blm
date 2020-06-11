@@ -103,6 +103,7 @@ $heading-font: 'Archivo Black', sans-serif;
 $bold: 700;
 $light: 300;
 $regular: 400;
+
 @mixin slider-transition {
     -webkit-transition: 0.4s;
     transition: 0.4s;

@@ -335,7 +335,6 @@ header {
     font-weight: 700;
     margin-top: 5px;
     min-width: 80px;
-    max-width: 80px;
     outline: none;
     cursor: pointer;
     padding: 5px 5px;
@@ -355,6 +354,10 @@ header {
       line-height: 1rem; }
       #resources .tab-content h3 span {
         display: block; }
+    #resources .tab-content h4 {
+      line-height: .10rem; }
+      #resources .tab-content h4 span {
+        color: #1e555c; }
 @keyframes fade {
   from {
     opacity: 0; }
@@ -364,37 +367,41 @@ header {
       display: inline-block;
       font-size: .75rem;
       font-weight: 700;
-      margin: 5px 0px 5px 0px;
+      margin: 2px 0px 5px 0px;
       padding: 2.5px 5px;
       text-transform: uppercase; }
+      #resources .tab-content .tags:hover {
+        cursor: pointer;
+        opacity: .75;
+        transition: .5s; }
     #resources .tab-content a {
       margin-right: 5px; }
     #resources .tab-content .filter-buttons {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-around;
-      align-items: center; }
+      align-items: center;
+      justify-content: flex-start; }
     #resources .tab-content .filter-content-container {
       display: flex;
       flex-flow: column wrap;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      margin-top: 10px; }
     #resources .tab-content .filterDiv {
-      background-color: #2196f3;
-      color: #f4f3ee;
-      text-align: center;
       display: none;
-      /* Hide by default */ }
+      /* Hide by default */
+      margin: 0; }
     #resources .tab-content .show {
       display: block; }
     #resources .tab-content .btn {
-      border: none;
-      outline: none;
       background-color: #f1f1f1;
+      border: none;
       cursor: pointer;
+      outline: none;
+      font-size: .75rem;
       font-weight: 700;
       margin-top: 5px;
       min-width: 80px;
-      max-width: 80px;
       outline: none;
       cursor: pointer;
       padding: 5px 5px;
@@ -402,6 +409,12 @@ header {
       text-transform: uppercase;
       transition: 1s; }
 
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+  #resources {
+    min-width: 600px;
+    max-width: 600px;
+    margin: 0 auto; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

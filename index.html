@@ -96,41 +96,64 @@
         </div>
         <div id="Donate" class="tab-content">
           <h3>In Support of Black Lives</h3>
-          <p><a href="https://twitter.com/lesbvmk/status/1273476048865329152" target="_blank">Black Trans Women GoFundMe Megalist</a>
-            <span class="tags">LGBTQIA+</span>
-            <span class="tags">Megalist</span>
-          </p>
-          <p><a href="https://gf.me/u/x8zf92" target="_blank">20 Tiny Homes for Trans Women</a>
-            <span class="tags">LGBTQIA+</span>
-            <span class="tags">Crowd Sourcing</span>
-          </p>
-          <p><a href="https://www.blackvisionsmn.org/" target="_blank">Black Visions Collective</a>
-            <span class="tags">LGBTQIA+</span>
-            <span class="tags">Organizations</span>
-          </p>
-          <p><a href="https://twitter.com/s4hia/status/1267690972227526656" target="_blank">Bail Funds, Black Individuals In Need & Bail Businesses</a>
-            <span class="tags">Bail Funds</span>
-            <span class="tags">Black Business</span>
-            <span class="tags">Crowd Sourcing</span>
-            <span class="tags">Megalist</span>
-          </p>
-          <p><b>Bail Funds & Legal Funds by City</b> <a href="https://twitter.com/Fumi_chun/status/1270420836172705792" target="_blank">Part One</a> | <a href="https://twitter.com/Fumi_chun/status/1270424059315027970" target="_blank">Part Two</a>
-            <span class="tags">Bail Funds</span>
-            <span class="tags">Megalist</span>
-          </p>
-          <p><a href="https://docs.google.com/document/d/1-0KC83vYfVQ-2freQveH43PWxuab2uWDEGolzrNoIks/edit#heading=h.c0pszbm7zg89" target="_blank">Black Lives Matter Mega Document</a>
-            <span class="tags">Megalist</span>
-          </p>
-          <p><a href="https://twitter.com/costarastrology/status/1266393495260008448" target="_blank">Bail Funds by City</a>
-            <span class="tags">Megalist</span>
-          </p>
-          <p><a href="https://twitter.com/Fumi_chun/status/1270078363210625032" target="_blank">Trans Funds & Resources</a>
-            <span class="tags">LGBTQIA+</span>
-            <span class="tags">Megalist</span>
-          </p>
+          <h4>Filter by <span>Topic</span></h4>
+            <div class="filter-buttons">
+              <button class="btn active-filter" onclick="filterSelection('all')">Show all</button>
+              <button class="btn" onclick="filterSelection('lgbtqia')">LGBTQIA+</button>
+              <button class="btn" onclick="filterSelection('bail-funds')">Bail Funds</button>
+              <button class="btn" onclick="filterSelection('black-biz')">Black Business</button>
+              <button class="btn" onclick="filterSelection('crowd-source')">Crowd Sourcing</button>
+              <button class="btn" onclick="filterSelection('megalist')">Megalist</button>
+              <button class="btn" onclick="filterSelection('orgs')">Organization</button>
+            </div>
+            <!-- The filterable elements. Note that some have multiple class names. This can be used if they belong to multiple categories-->
+            <div class="filter-content-container">
+              <p class="filterDiv lgbtqia megalist">
+                <a href="https://twitter.com/lesbvmk/status/1273476048865329152" target="_blank">Black Trans Women GoFundMe Megalist</a>
+                  <span class="tags" onclick="filterSelection('lgbtqia')">LGBTQIA+</span>
+                  <span class="tags" onclick="filterSelection('megalist')">Megalist</span>
+              </p>
+              <p class="filterDiv lgbtqia crowd-source">
+                <a href="https://gf.me/u/x8zf92" target="_blank">20 Tiny Homes for Trans Women</a>
+                <span class="tags" onclick="filterSelection('lgbtqia')">LGBTQIA+</span>
+                <span class="tags" onclick="filterSelection('crowd-source')">Crowd Sourcing</span>
+              </p>
+              <p class="filterDiv lgbtqia orgs">
+                <a href="https://www.blackvisionsmn.org/" target="_blank">Black Visions Collective</a>
+                <span class="tags" onclick="filterSelection('lgbtqia')">LGBTQIA+</span>
+                <span class="tags" onclick="filterSelection('orgs')">Organizations</span> 
+              </p>
+              <p class="filterDiv bail-funds black-biz crowd-source megalist">
+                <a href="https://twitter.com/s4hia/status/1267690972227526656" target="_blank">Bail Funds, Black Individuals In Need & Bail Businesses</a>
+                <span class="tags" onclick="filterSelection('bail-funds')">Bail Funds</span>
+                <span class="tags" onclick="filterSelection('black-biz')">Black Business</span>
+                <span class="tags" onclick="filterSelection('crowd-source')">Crowd Source</span> 
+                <span class="tags" onclick="filterSelection('megalist')">Megalist</span> 
+              </p>
+              <p class="filterDiv bail-funds megalist">
+                <b>Bail Funds & Legal Funds by City</b>
+                <a href="https://twitter.com/Fumi_chun/status/1270420836172705792" target="_blank">Part One</a> | <a href="https://twitter.com/Fumi_chun/status/1270424059315027970" target="_blank">Part Two</a>
+                <span class="tags" onclick="filterSelection('bail-funds')">Bail Funds</span>
+                <span class="tags" onclick="filterSelection('megalist')">Megalist</span> 
+              </p>
+              <p class="filterDiv megalist">
+                <a href="https://docs.google.com/document/d/1-0KC83vYfVQ-2freQveH43PWxuab2uWDEGolzrNoIks/edit#heading=h.c0pszbm7zg89" target="_blank">Black Lives Matter Mega Document</a>
+                <span class="tags" onclick="filterSelection('megalist')">Megalist</span> 
+              </p>
+              <p class="filterDiv bail-funds megalist">
+                <a href="https://twitter.com/costarastrology/status/1266393495260008448" target="_blank">Bail Funds by City</a>
+                <span class="tags" onclick="filterSelection('bail-funds')">Bail Funds</span>
+                <span class="tags" onclick="filterSelection('megalist')">Megalist</span> 
+              </p>
+              <p class="filterDiv lgbtqia megalist">
+                <a href="https://twitter.com/Fumi_chun/status/1270078363210625032" target="_blank">Trans Funds & Resources</a>
+                <span class="tags" onclick="filterSelection('lgbtqia')">LGBTQIA+</span>
+                <span class="tags" onclick="filterSelection('megalist')">Megalist</span> 
+              </p>
+            </div>
         </div>
+
         <div id="Protest" class="tab-content">
-          
           <h3>For Black Lives</h3>
           <p><a href="https://issuu.com/nlc.sf.2014/docs/beyondthestreets_final" target="_blank">26 Ways to Be in the Struggle Beyond the Streets</a>
             <span class="tags">Accessible</span>
@@ -148,42 +171,33 @@
         <div id="Heal" class="tab-content">
           <h3>From the trauma
             <span>of systemic racism & police brutality</span></h3>
-            <h4>Filter Topics</h4>
             <!-- Filter out content based on topic-->
+            <h4>Filter by <span>Topic</span></h4>
             <div class="filter-buttons">
               <button class="btn active-filter" onclick="filterSelection('all')">Show all</button>
-              <button class="btn" onclick="filterSelection('cars')">Cars</button>
-              <button class="btn" onclick="filterSelection('animals')">Animals</button>
-              <button class="btn" onclick="filterSelection('fruits')">Fruits</button>
-              <button class="btn" onclick="filterSelection('colors')">Colors</button>
+              <button class="btn" onclick="filterSelection('accessible')">Accessible</button>
+              <button class="btn" onclick="filterSelection('decolonize')">Decolonization</button>
+              <button class="btn" onclick="filterSelection('megalist')">Megalists</button>
+              <button class="btn" onclick="filterSelection('mental-health')">Mental Health</button>
+              <button class="btn" onclick="filterSelection('systemic-racism')">Systemic Racism</button>
             </div>
             <!-- The filterable elements. Note that some have multiple class names. This can be used if they belong to multiple categories-->
             <div class="filter-content-container">
-              <div class="filterDiv cars fruits colors">BMW</div>
-              <div class="filterDiv colors fruits">Orange</div>
-              <div class="filterDiv cars">Volvo</div>
-              <div class="filterDiv colors">Red</div>
-              <div class="filterDiv cars animals">Mustang</div>
-              <div class="filterDiv colors">Blue</div>
-              <div class="filterDiv animals">Cat</div>
-              <div class="filterDiv fruits">Melon</div>
-              <div class="filterDiv fruits animals">Kiwi</div>
-              <div class="filterDiv fruits">Banana</div>
-              <div class="filterDiv fruits">Lemon</div>
-              <div class="filterDiv animals">Cow</div>
+              <p class="filterDiv megalist">
+                <a href="https://twitter.com/Fumi_chun/status/1270077274784534529" target="_blank">Black Mental Health Matters</a>
+                <span class="tags" onclick="filterSelection('megalist')">Megalist</span>
+              </p>
+              <p class="filterDiv mental-health accessible">
+                <a href="https://www.onthemendhealing.com/" target="_blank">On The Mend | Free + Sliding Scale Mental Health Resources</a>
+                  <span class="tags" onclick="filterSelection('mental-health')">Mental Health Resources</span>
+                  <span class="tags" onclick="filterSelection('accessible')">Accessible</span>
+              </p>
+              <p class="filterDiv decolonize systemic-racism">
+                <a href="https://www.nytimes.com/2019/05/29/books/review/antiracist-reading-list-ibram-x-kendi.html" target="_blank">An Antiracist Reading List</a>
+                  <span class="tags" onclick="filterSelection('decolonize')">Decolonize Your Mind</span>
+                  <span class="tags" onclick="filterSelection('systemic-racism')">Systemic Racism</span>
+              </p>
             </div>
-
-          <p><a href="https://twitter.com/Fumi_chun/status/1270077274784534529" target="_blank">Black Mental Health Matters</a>
-            <span class="tags">Megalist</span>
-          </p>
-          <p><a href="https://www.onthemendhealing.com/" target="_blank">On The Mend | Free + Sliding Scale Mental Health Resources</a>
-            <span class="tags">Mental Health Resources</span>
-            <span class="tags">Accessible</span>
-          </p>
-          <p><a href="https://www.nytimes.com/2019/05/29/books/review/antiracist-reading-list-ibram-x-kendi.html" target="_blank">An Antiracist Reading List</a>
-            <span class="tags">Decolonize Your Mind</span>
-            <span class="tags">Systemic Racism</span>
-          </p>
         </div>
         <div id="Petition" class="tab-content">
           <h3>To Seek Justice 

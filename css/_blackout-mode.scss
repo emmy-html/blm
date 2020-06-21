@@ -52,6 +52,17 @@ body.blackout-mode {
             h3 {
                 color: $orange;
             }
+            .tags {
+                color: $black;
+            }
+            span.tags {
+                &:nth-of-type(even) {
+                    background: $orange;
+                }
+                &:nth-of-type(odd) {
+                    background: $blue;
+                }
+            }
         }
     }
 }

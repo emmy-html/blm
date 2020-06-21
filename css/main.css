@@ -115,6 +115,12 @@ body.blackout-mode {
       color: #1b1b1c; }
   body.blackout-mode #resources .tab-content h3 {
     color: #ff9b54; }
+  body.blackout-mode #resources .tab-content .tags {
+    color: #1b1b1c; }
+  body.blackout-mode #resources .tab-content span.tags:nth-of-type(even) {
+    background: #ff9b54; }
+  body.blackout-mode #resources .tab-content span.tags:nth-of-type(odd) {
+    background: #1e555c; }
 
 /* Fonts & Colors */
 /* Animations */
@@ -165,6 +171,12 @@ body.blackout-mode {
       border: none; }
       .light-mode #resources .tab-content h3 {
         color: #720026; }
+      .light-mode #resources .tab-content .tags {
+        color: #f4f3ee; }
+      .light-mode #resources .tab-content span.tags:nth-of-type(even) {
+        background: #720026; }
+      .light-mode #resources .tab-content span.tags:nth-of-type(odd) {
+        background: #1e555c; }
 
 /* Fonts & Colors */
 /* Animations */
@@ -294,28 +306,51 @@ header {
 
 /* Resources Tabs */
 #resources {
-  margin-top: 50px;
+  margin-top: 35px;
   /* Style the buttons that are used to open the tab content */
   /* Style the tab content */ }
+  #resources h2 {
+    line-height: .30rem; }
+  #resources .tab {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; }
   #resources .tab button {
-    float: left;
     font-weight: 700;
+    margin-top: 5px;
+    min-width: 80px;
+    max-width: 80px;
     outline: none;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 5px 5px;
+    text-align: center;
     text-transform: uppercase;
     transition: 1s; }
   #resources .tab-content {
     display: none;
     min-height: 300px;
-    animation: fade 1s; }
-    #resources .tab-content h3 span {
-      display: block; }
+    animation: fade 1s;
+    /* The resource tags */ }
+    #resources .tab-content h3 {
+      line-height: 1rem; }
+      #resources .tab-content h3 span {
+        display: block; }
 @keyframes fade {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
+    #resources .tab-content .tags {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 700;
+      margin: 5px 0px 5px 0px;
+      padding: 2.5px 5px;
+      text-transform: uppercase; }
+    #resources .tab-content a {
+      margin-right: 5px; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -1,6 +1,6 @@
 // fades in content on load
 $(document).ready(function () {
-    $('.fade').fadeIn(1500).removeClass('fade');
+    $('.fade').fadeIn(1000).removeClass('fade');
 });
 // toggle color scheme switch
 function toggle() {
@@ -35,3 +35,5 @@ function openResource(evt, topic) {
     document.getElementById(topic).style.display = "block";
     evt.currentTarget.className += " active";
 }
+// show a tab by default
+document.getElementById("default").click();

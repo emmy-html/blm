@@ -36,7 +36,7 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section id="hero">
       <div class="content-wrapper">
         <article class="content-container">
           <h1>Protect
@@ -49,12 +49,12 @@
         </aside>
       </div>
     </section>
-    <section class="resources">
+    <section id="resources">
       <div class="content-wrapper">
         <h2>I want to...</h2>
         <!-- Resources links -->
         <div class="tab">
-          <button class="tab-links" onclick="openResource(event, 'Educate')">Educate</button>
+          <button class="tab-links" id="default" onclick="openResource(event, 'Educate')">Educate</button>
           <button class="tab-links" onclick="openResource(event, 'Donate')">Donate</button>
           <button class="tab-links" onclick="openResource(event, 'Protest')">Protest</button>
           <button class="tab-links" onclick="openResource(event, 'Heal')">Heal</button>
@@ -91,7 +91,16 @@
             <span class="tags">Bail Funds</span>
             <span class="tags">Megalist</span>
           </p>
-
+          <p><a href="https://docs.google.com/document/d/1-0KC83vYfVQ-2freQveH43PWxuab2uWDEGolzrNoIks/edit#heading=h.c0pszbm7zg89" target="_blank">Black Lives Matter Mega Document</a>
+            <span class="tags">Megalist</span>
+          </p>
+          <p><a href="https://twitter.com/costarastrology/status/1266393495260008448" target="_blank">Bail Funds by City</a>
+            <span class="tags">Megalist</span>
+          </p>
+          <p><a href="https://twitter.com/Fumi_chun/status/1270078363210625032" target="_blank">Trans Funds & Resources</a>
+            <span class="tags">LGBTQIA+</span>
+            <span class="tags">Megalist</span>
+          </p>
         </div>
         <div id="Protest" class="tab-content">
           <h3>For Black Lives</h3>
@@ -117,7 +126,7 @@
         </div>
       </div>
     </section>
-    <section class="contribute">
+    <section id="contribute">
       <div class="content-wrapper">
         <article>
           <h2>Do you have a resource you would like to share?</h2>

@@ -5,6 +5,7 @@
 }
 
 body.blackout-mode {
+    /* Universal Styles */ 
     background: $black;
     color: $white;
     a:link,
@@ -16,13 +17,41 @@ body.blackout-mode {
         color: $orange;
         @include link-transition;
     }
-    .content-container {
-        border: 10px solid $blue;
-        span.black-lives {
-            color: $orange;
-        }
-    }
     h2 {
         color: $orange;
+    }
+    /* Hero */ 
+    #hero {
+        .content-container {
+            border: 10px solid $blue;
+            span.black-lives {
+                color: $orange;
+            }
+        }
+    }
+    /* Resources Tabs */
+    #resources {
+        .tab button {
+            background-color: inherit;
+            border: none;
+            color: $black;
+        }
+        .tab button:hover {
+            background-color: $orange;
+        }
+        .tab button.active {
+            background-color: $blue;
+        }
+        .tab button:not(.active) {
+            color: $white;
+            &:hover {
+                color: $black;
+            }
+        }
+        .tab-content {
+            h3 {
+                color: $orange;
+            }
+        }
     }
 }

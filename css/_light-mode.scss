@@ -5,6 +5,7 @@
 }
 
 .light-mode {
+    /* Universal Styles */ 
     background: $white;
     color: $black;
     a:link,
@@ -16,13 +17,51 @@
         color: $red;
         @include link-transition;
     }
-    .content-container {
-        border: 10px solid $blue;
-        span.black-lives {
-            color: $red;
-        }
-    }
     h2 {
         color: $red;
+    }
+    /* Hero */
+    #hero {
+        /* Protect Black Lives Intro */ 
+        .content-container {
+            border: 10px solid $blue;
+            span.black-lives {
+                color: $red;
+            }
+        }
+    }
+    /* Resources Tabs */
+    #resources {
+        /* The tab */
+        .tab {
+            background: none;
+            overflow: hidden;
+        }
+        /* Tab buttons */
+        .tab button {
+            background-color: inherit;
+            border: none;
+            color: $white;
+        }
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: $red;
+        }
+        /* Active button class */ 
+        .tab button.active {
+            background-color: $blue;
+        }
+        .tab button:not(.active) {
+            color: $black;
+            &:hover {
+                color: white;
+            }
+        }
+        .tab-content {
+            border: none;
+            h3 {
+                color: $red;
+            }
+        }
     }
 }

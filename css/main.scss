@@ -98,12 +98,6 @@ textarea {
 @import "light-mode";
 @import "variables";
 
-$body-font: 'Chivo', sans-serif;
-$heading-font: 'Archivo Black', sans-serif;
-$bold: 700;
-$light: 300;
-$regular: 400;
-
 @mixin slider-transition {
     -webkit-transition: 0.4s;
     transition: 0.4s;
@@ -128,18 +122,96 @@ a:visited {
     margin: 0px 25px;
 }
 /* Header */ 
-nav {
-  margin: 0 auto;
-  min-width: 190px;
-  max-width: 200px;
-  ul {
+header {
+  nav {
+    margin: 0 auto;
+    min-width: 190px;
+    max-width: 200px;
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        list-style: none;
+        padding: 0;
+        li {
+          text-transform: uppercase;
+        }
+      }
+    }
+  /* Toggle container */ 
+  .toggle-mode {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    list-style: none;
-    padding: 0;
-    li {
-      text-transform: uppercase;
+    flex-flow: row nowrap;
+    max-width: 200px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    p {
+        margin-top: 45px;
+        text-transform: uppercase;
+    }
+  }
+  /* Toggle switch */
+  .switch {
+      position: relative;
+      display: inline-block;
+      top: 15px;
+      width: 48px;
+      height: 24px;
+  }
+  .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+  }
+  .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $light-blue;
+      @include slider-transition();
+      &:hover {
+        opacity: .5;
+      }
+  }
+  .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 4px;
+      bottom: 4px;
+      background-color: $blue;
+      @include slider-transition();
+  }
+  input:checked + .slider {
+      background: $blue;
+  }
+  input:checked + .slider:before {
+      -webkit-transform: translateX(24px);
+      -ms-transform: translateX(24px);
+      transform: translateX(24px);
+      background-color: $light-blue;
+      @include slider-transition();
+  }
+  .slider.round {
+      border-radius: 50px;
+  }
+  .slider.round:before {
+      border-radius: 50px;
+  }
+  aside {
+    p {
+        margin: 0 auto;
+        margin-top: 25px;
+        max-width: 320px;
+        text-align: justify;
+        text-transform: uppercase;
     }
   }
 }
@@ -147,130 +219,66 @@ nav {
 #about {
   display: none;
 }
-/* Toggle container */ 
-.toggle-mode {
-  display: flex;
-  flex-flow: row nowrap;
-  max-width: 200px;
-  height: 30px;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-  margin: 0 auto;
-  p {
-      margin-top: 45px;
-      text-transform: uppercase;
-  }
-}
-/* Toggle switch */
-.switch {
-    position: relative;
-    display: inline-block;
-    top: 15px;
-    width: 48px;
-    height: 24px;
-}
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: $light-blue;
-    @include slider-transition();
-}
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 4px;
-    background-color: $blue;
-    @include slider-transition();
-}
-input:checked + .slider {
-    background: $blue;
-}
-input:checked + .slider:before {
-    -webkit-transform: translateX(24px);
-    -ms-transform: translateX(24px);
-    transform: translateX(24px);
-    background-color: $light-blue;
-    @include slider-transition();
-}
-.slider.round {
-    border-radius: 50px;
-}
-.slider.round:before {
-    border-radius: 50px;
-}
-/* Main Content */
-.content-container {
-  margin: 0 auto;
-  margin-top: 50px;
-  max-width: 320px;
-  h1 {
-      font-size: 3rem;
-      line-height: 3rem;
-      padding-left: 20px;
-  }
-  span {
-      display: block;
-  }
-}
-aside {
-  p {
-      margin: 0 auto;
-      margin-top: 25px;
-      max-width: 320px;
-      text-align: justify;
-      text-transform: uppercase;
-  }
-}
-/* Resources Tabs */ 
-/* Style the tab */ 
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-/* Style the buttons that are used to open the tab content */ 
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-/* Change background color of buttons on hover */ 
-.tab button:hover {
-  background-color: #ddd;
-}
-/* Create an active/current tablink class */ 
-.tab button.active {
-  background-color: #ccc;
-}
-/* Style the tab content */
-.tab-content {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-  h3 {
+/* Hero */
+#hero {
+  /* Protect Black Lives Intro */
+  .content-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 320px;
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        padding-left: 20px;
+    }
     span {
-      display: block;
+        display: block;
+    }
+  }
+  aside {
+    p {
+        margin: 0 auto;
+        margin-top: 25px;
+        max-width: 320px;
+        text-align: justify;
+        text-transform: uppercase;
     }
   }
 }
+/* Resources Tabs */
+#resources {
+  margin-top: 50px;
+  /* Style the buttons that are used to open the tab content */ 
+  .tab button {
+    float: left;
+    font-weight: $bold;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: 1s;
+  }
+  /* Style the tab content */
+  .tab-content {
+    display: none;
+    min-height: 300px;
+    h3 {
+      span {
+        display: block;
+      }
+    }
+    animation: fade 1s;
+    @keyframes fade {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

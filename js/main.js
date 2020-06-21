@@ -14,3 +14,7 @@ function toggle() {
         modeText.innerHTML = "Light Mode";
     }
 }
+// toggle the about section
+$(".about").click(function() {
+    $("#about").toggle();
+})

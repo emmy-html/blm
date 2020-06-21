@@ -15,16 +15,28 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body class="light-mode" id="body">
-  <main class="fade">
+<body class="light-mode fade" id="body">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" class="about">About</button></li>
+        <li><a href="#contribute">Contribute</a></li>
+      </ul>
+    </nav>
+    <aside id="about">
+      <p>Protect Black Lives was created by <a href="https://github.com/emmy-html" target="_blank">Emmy Jordan</a> as a resource to educate and spread awareness regarding the police brutality crisis that affects Black lives worldwide. This website will provide racism on how to combat and educate yourself on the consequences of systemic racism, and police brutality.</p>
+    </aside>
+    <article class="toggle-mode">
+      <p id="toggle-description">Light Mode</p>
+      <label class="switch">
+        <input type="checkbox" id="mode-toggle">
+        <span class="slider round" onclick=toggle()></span>
+      </label>
+    </article>
+  </header>
+
+  <main>
     <div class="content-wrapper">
-      <article class="toggle-mode">
-        <p id="toggle-description">Light Mode</p>
-        <label class="switch">
-          <input type="checkbox" id="mode-toggle">
-          <span class="slider round" onclick=toggle()></span>
-        </label>
-      </article>
       <article class="content-container">
         <h1>Protect
           <span class="black-lives">Black</span>

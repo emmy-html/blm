@@ -79,6 +79,7 @@ textarea {
 
 /* Color Mode Imports */
 /* Fonts & Colors */
+/* Animations */
 body.blackout-mode {
   background: #1b1b1c;
   color: #f4f3ee; }
@@ -96,6 +97,7 @@ body.blackout-mode {
       color: #ff9b54; }
 
 /* Fonts & Colors */
+/* Animations */
 .light-mode {
   background: #f4f3ee;
   color: #1b1b1c; }
@@ -113,6 +115,7 @@ body.blackout-mode {
       color: #720026; }
 
 /* Fonts & Colors */
+/* Animations */
 /* Mobile Styles */
 body {
   font: 400 14px "Chivo", sans-serif; }
@@ -131,6 +134,20 @@ a:visited {
 
 .content-wrapper {
   margin: 0px 25px; }
+
+/* Header */
+nav {
+  margin: 0 auto;
+  min-width: 190px;
+  max-width: 200px; }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0; }
+    nav ul li {
+      text-transform: uppercase; }
 
 /* Main Content */
 .content-container {
@@ -214,6 +231,10 @@ input:checked + .slider:before {
   .toggle-mode p {
     margin-top: 45px;
     text-transform: uppercase; }
+
+/* About Section */
+#about {
+  display: none; }
 
 /* ==========================================================================
    Helper classes

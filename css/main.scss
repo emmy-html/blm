@@ -127,6 +127,22 @@ a:visited {
 .content-wrapper {
     margin: 0px 25px;
 }
+/* Header */ 
+nav {
+  margin: 0 auto;
+  min-width: 190px;
+  max-width: 200px;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0;
+    li {
+      text-transform: uppercase;
+    }
+  }
+}
 /* Main Content */
 .content-container {
     margin: 0 auto;
@@ -212,6 +228,11 @@ input:checked + .slider:before {
         text-transform: uppercase;
     }
 }
+/* About Section */ 
+#about {
+  display: none;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

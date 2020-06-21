@@ -73,6 +73,24 @@
                     background: $blue;
                 }
             }
+            /* Filter buttons */ 
+            .btn {
+                background: none;
+            }
+            /* Add a background color to the button on hover */
+            .btn:hover {
+                background: $red;
+            }
+            .btn:not(.active-filter) {
+                &:hover {
+                    color: $white;
+                }
+            }
+            /* Change background to active class */
+            .btn.active-filter {
+                background: $blue;
+                color: $white;
+            }
         }
     }
 }

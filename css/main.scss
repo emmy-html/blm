@@ -97,6 +97,7 @@ textarea {
 @import "blackout-mode";
 @import "light-mode";
 @import "variables";
+@import "mixins";
 
 @mixin slider-transition {
     -webkit-transition: 0.4s;
@@ -252,28 +253,17 @@ header {
     line-height: .30rem;
   }
   .tab {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+    @include tab-container;
   }
   /* Style the buttons that are used to open the tab content */ 
   .tab button {
-    font-weight: $bold;
-    margin-top: 5px;
-    min-width: 80px;
-    max-width: 80px;
-    outline: none;
-    cursor: pointer;
-    padding: 5px 5px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 1s;
+    @include tab-button;
   }
   /* Style the tab content */
   .tab-content {
     display: none;
-    min-height: 300px;
+    min-height: 500px;
+    overflow: scroll;
     animation: fade 1s;
     h3 {
       line-height: 1rem;
@@ -300,6 +290,33 @@ header {
     }
     a {
       margin-right: 5px;
+    }
+    /* Filter through the resources */
+    .filter-buttons {
+      @include tab-container;
+    }
+    .filter-content-container {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+    }
+    .filterDiv {
+      background-color: #2196f3;
+      color: $white;
+      text-align: center;
+      display: none; /* Hide by default */
+    }
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      @include tab-button;
     }
   }
 }

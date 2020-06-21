@@ -168,7 +168,10 @@ body.blackout-mode {
       .light-mode #resources .tab button:not(.active):hover {
         color: white; }
     .light-mode #resources .tab-content {
-      border: none; }
+      border: none;
+      /* Filter buttons */
+      /* Add a background color to the button on hover */
+      /* Change background to active class */ }
       .light-mode #resources .tab-content h3 {
         color: #720026; }
       .light-mode #resources .tab-content .tags {
@@ -177,7 +180,19 @@ body.blackout-mode {
         background: #720026; }
       .light-mode #resources .tab-content span.tags:nth-of-type(odd) {
         background: #1e555c; }
+      .light-mode #resources .tab-content .btn {
+        background: none; }
+      .light-mode #resources .tab-content .btn:hover {
+        background: #720026; }
+      .light-mode #resources .tab-content .btn:not(.active-filter):hover {
+        color: #f4f3ee; }
+      .light-mode #resources .tab-content .btn.active-filter {
+        background: #1e555c;
+        color: #f4f3ee; }
 
+/* Fonts & Colors */
+/* Animations */
+/* Fonts */
 /* Fonts & Colors */
 /* Animations */
 /* Fonts */
@@ -329,9 +344,13 @@ header {
     transition: 1s; }
   #resources .tab-content {
     display: none;
-    min-height: 300px;
+    min-height: 500px;
+    overflow: scroll;
     animation: fade 1s;
-    /* The resource tags */ }
+    /* The resource tags */
+    /* Filter through the resources */
+    /* The "show" class is added to the filtered elements */
+    /* Style the buttons */ }
     #resources .tab-content h3 {
       line-height: 1rem; }
       #resources .tab-content h3 span {
@@ -350,6 +369,38 @@ header {
       text-transform: uppercase; }
     #resources .tab-content a {
       margin-right: 5px; }
+    #resources .tab-content .filter-buttons {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center; }
+    #resources .tab-content .filter-content-container {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-evenly; }
+    #resources .tab-content .filterDiv {
+      background-color: #2196f3;
+      color: #f4f3ee;
+      text-align: center;
+      display: none;
+      /* Hide by default */ }
+    #resources .tab-content .show {
+      display: block; }
+    #resources .tab-content .btn {
+      border: none;
+      outline: none;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      font-weight: 700;
+      margin-top: 5px;
+      min-width: 80px;
+      max-width: 80px;
+      outline: none;
+      cursor: pointer;
+      padding: 5px 5px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 1s; }
 
 /* ==========================================================================
    Helper classes

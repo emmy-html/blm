@@ -130,6 +130,7 @@
           </p>
         </div>
         <div id="Protest" class="tab-content">
+          
           <h3>For Black Lives</h3>
           <p><a href="https://issuu.com/nlc.sf.2014/docs/beyondthestreets_final" target="_blank">26 Ways to Be in the Struggle Beyond the Streets</a>
             <span class="tags">Accessible</span>
@@ -147,6 +148,31 @@
         <div id="Heal" class="tab-content">
           <h3>From the trauma
             <span>of systemic racism & police brutality</span></h3>
+            <h4>Filter Topics</h4>
+            <!-- Filter out content based on topic-->
+            <div class="filter-buttons">
+              <button class="btn active-filter" onclick="filterSelection('all')">Show all</button>
+              <button class="btn" onclick="filterSelection('cars')">Cars</button>
+              <button class="btn" onclick="filterSelection('animals')">Animals</button>
+              <button class="btn" onclick="filterSelection('fruits')">Fruits</button>
+              <button class="btn" onclick="filterSelection('colors')">Colors</button>
+            </div>
+            <!-- The filterable elements. Note that some have multiple class names. This can be used if they belong to multiple categories-->
+            <div class="filter-content-container">
+              <div class="filterDiv cars fruits colors">BMW</div>
+              <div class="filterDiv colors fruits">Orange</div>
+              <div class="filterDiv cars">Volvo</div>
+              <div class="filterDiv colors">Red</div>
+              <div class="filterDiv cars animals">Mustang</div>
+              <div class="filterDiv colors">Blue</div>
+              <div class="filterDiv animals">Cat</div>
+              <div class="filterDiv fruits">Melon</div>
+              <div class="filterDiv fruits animals">Kiwi</div>
+              <div class="filterDiv fruits">Banana</div>
+              <div class="filterDiv fruits">Lemon</div>
+              <div class="filterDiv animals">Cow</div>
+            </div>
+
           <p><a href="https://twitter.com/Fumi_chun/status/1270077274784534529" target="_blank">Black Mental Health Matters</a>
             <span class="tags">Megalist</span>
           </p>

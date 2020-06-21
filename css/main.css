@@ -95,6 +95,8 @@ body.blackout-mode {
     border: 10px solid #1e555c; }
     body.blackout-mode .content-container span.black-lives {
       color: #ff9b54; }
+  body.blackout-mode h2 {
+    color: #ff9b54; }
 
 /* Fonts & Colors */
 /* Animations */
@@ -113,6 +115,8 @@ body.blackout-mode {
     border: 10px solid #1e555c; }
     .light-mode .content-container span.black-lives {
       color: #720026; }
+  .light-mode h2 {
+    color: #720026; }
 
 /* Fonts & Colors */
 /* Animations */
@@ -149,24 +153,23 @@ nav {
     nav ul li {
       text-transform: uppercase; }
 
-/* Main Content */
-.content-container {
-  margin: 0 auto;
-  margin-top: 50px;
-  max-width: 320px; }
-  .content-container h1 {
-    font-size: 3rem;
-    line-height: 3rem;
-    padding-left: 20px; }
-  .content-container span {
-    display: block; }
+/* About Section */
+#about {
+  display: none; }
 
-aside p {
-  margin: 0 auto;
-  margin-top: 25px;
-  max-width: 320px;
-  text-align: justify;
-  text-transform: uppercase; }
+/* Toggle container */
+.toggle-mode {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 200px;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  margin: 0 auto; }
+  .toggle-mode p {
+    margin-top: 45px;
+    text-transform: uppercase; }
 
 /* Toggle switch */
 .switch {
@@ -220,21 +223,58 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50px; }
 
-.toggle-mode {
-  display: flex;
-  flex-flow: row nowrap;
-  max-width: 200px;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-  margin: 0 auto; }
-  .toggle-mode p {
-    margin-top: 45px;
-    text-transform: uppercase; }
+/* Main Content */
+.content-container {
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 320px; }
+  .content-container h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-left: 20px; }
+  .content-container span {
+    display: block; }
 
-/* About Section */
-#about {
-  display: none; }
+aside p {
+  margin: 0 auto;
+  margin-top: 25px;
+  max-width: 320px;
+  text-align: justify;
+  text-transform: uppercase; }
+
+/* Resources Tabs */
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1; }
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s; }
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd; }
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc; }
+
+/* Style the tab content */
+.tab-content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none; }
+  .tab-content h3 span {
+    display: block; }
 
 /* ==========================================================================
    Helper classes

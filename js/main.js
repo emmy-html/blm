@@ -16,5 +16,22 @@ function toggle() {
 }
 // toggle the about section
 $(".about").click(function() {
-    $("#about").toggle();
+    $("#about").fadeToggle('linear');
 })
+// resources tabs
+function openResource(evt, topic) {
+    var i, tabContent, tabLinks;
+    tabContent = document.getElementsByClassName("tab-content");
+    // hide all tab content by default
+    for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+    }
+    // get all tab links and remove the active class
+    tabLinks = document.getElementsByClassName("tab-links");
+    for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+    }
+    // show the current tab and add an active class to the button that opened the tab
+    document.getElementById(topic).style.display = "block";
+    evt.currentTarget.className += " active";
+}

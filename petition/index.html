@@ -8,9 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/main.scss">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.scss">
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -19,7 +19,7 @@
   <header>
     <nav>
       <ul>
-        <li><a href="index.html" class="active-nav">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="#" class="about">About</a></li>
         <li><a href="#contribute">Contribute</a></li>
       </ul>
@@ -50,18 +50,36 @@
         </aside>
       </div>
     </section>
-
     <section id="resources">
       <div class="content-wrapper">
         <h2>I want to...</h2>
         <!-- Categories -->
         <div class="category">
-          <a href="donate/index.html" class="category-button">Donate</a>
-          <a href="educate/index.html" class="category-button">Educate</a>
-          <a href="heal/index.html" class="category-button">Heal</a>
-          <a href="petition/index.html" class="category-button">Petition</a>
-          <a href="protest/index.html" class="category-button">Protest</a>
+            <a href="../donate/index.html" class="category-button">Donate</a>
+            <a href="../educate/index.html" class="category-button">Educate</a>
+            <a href="../heal/index.html" class="category-button">Heal</a>
+            <a href="index.html" class="category-button active-cat">Petition</a>
+            <a href="../protest/index.html" class="category-button">Protest</a>
         </div>
+        <div class="tab-content">
+            <h3>To Seek Justice 
+                <span>& Protect Black Lives</span></h3>
+                  <!-- Filter out content based on topic-->
+                  <h4>Filter by <span>Topic</span></h4>
+                  <div class="filter-buttons">
+                    <button class="btn active-filter" id="default" onclick="findTag('all')">Show all</button>
+                    <button class="btn" onclick="findTag('petition')">Petition</button>
+                    <button class="btn" onclick="findTag('police-brutality')">Police Brutality</button>
+                  </div>
+                <!-- The filterable elements. Note that some have multiple class names. This can be used if they belong to multiple categories-->
+                <div class="filter-content-container">
+                  <p class="filterLink petition police-brutality">
+                    <a href="http://chng.it/fvztBTGsKQ" target="_blank">Reopen the Investigation Into the Murder of Lionel G. Lewis</a>
+                    <span class="btn tags" onclick="findTag('petition')">Petition</span>
+                    <span class="btn tags" onclick="findTag('police-brutality')">Police Brutality</span>
+                  </p>
+                </div>
+          </div>
       </div>
     </section>
     <section id="contribute">
@@ -73,8 +91,8 @@
     </section>
   </main>
 
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

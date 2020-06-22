@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>Protect Black Lives | A collection of resources</title>
+  <meta name="description" content="resources to protect black lives">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.scss">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="light-mode fade" id="body">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#" class="about">About</a></li>
+        <li><a href="#contribute">Contribute</a></li>
+      </ul>
+    </nav>
+    <aside id="about">
+      <p>Protect Black Lives was created by <a href="https://github.com/emmy-html" target="_blank">Emmy Jordan</a> as a resource to educate and spread awareness regarding the police brutality crisis that affects Black lives worldwide. This website will provide racism on how to combat and educate yourself on the consequences of systemic racism, and police brutality.</p>
+    </aside>
+    <article class="toggle-mode">
+      <p id="toggle-description">Light Mode</p>
+      <label class="switch">
+        <input type="checkbox" id="mode-toggle">
+        <span class="slider round" onclick=toggle()></span>
+      </label>
+    </article>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="content-wrapper">
+        <article class="content-container">
+          <h1>Protect
+            <span class="black-lives">Black</span>
+            <span>Lives</span>
+          </h1>
+        </article>
+        <aside>
+          <p>An open source collection of resources in the interest of protecting black lives.</p>
+        </aside>
+      </div>
+    </section>
+    <section id="resources">
+      <div class="content-wrapper">
+        <h2>I want to...</h2>
+        <!-- Categories -->
+        <div class="category">
+            <a href="../donate/index.html" class="category-button">Donate</a>
+            <a href="../educate/index.html" class="category-button">Educate</a>
+            <a href="index.html" class="category-button active-cat">Heal</a>
+            <a href="../petition/index.html" class="category-button">Petition</a>
+            <a href="../protest/index.html" class="category-button">Protest</a>
+        </div>
+        <div class="tab-content">
+            <h3>From the trauma
+                <span>of systemic racism & police brutality</span></h3>
+                <!-- Filter out content based on topic-->
+                <h4>Filter by <span>Topic</span></h4>
+                <div class="filter-buttons">
+                  <button class="btn active-filter" id="default" onclick="findTag('all')">Show all</button>
+                  <button class="btn" onclick="findTag('accessible-healing')">Accessible</button>
+                  <button class="btn" onclick="findTag('decolonize')">Decolonization</button>
+                  <button class="btn" onclick="findTag('healing-megalist')">Megalists</button>
+                  <button class="btn" onclick="findTag('mental-health')">Mental Health</button>
+                  <button class="btn" onclick="findTag('systemic-racism')">Systemic Racism</button>
+                </div>
+              <!-- The filterable elements. Note that some have multiple class names. This can be used if they belong to multiple categories-->
+              <div class="filter-content-container">
+                <p class="filterLink healing-megalist">
+                  <a href="https://twitter.com/Fumi_chun/status/1270077274784534529" target="_blank">Black Mental Health Matters</a>
+                  <span class="btn tags" onclick="findTag('healing-megalist')">Megalist</span>
+                </p>
+                <p class="filterLink mental-health accessible-healing">
+                  <a href="https://www.onthemendhealing.com/" target="_blank">On The Mend | Free + Sliding Scale Mental Health Resources</a>
+                    <span class="btn tags" onclick="findTag('mental-health')">Mental Health Resources</span>
+                    <span class="btn tags" onclick="findTag('accessible-healing')">Accessible</span>
+                </p>
+                <p class="filterLink decolonize systemic-racism">
+                  <a href="https://www.nytimes.com/2019/05/29/books/review/antiracist-reading-list-ibram-x-kendi.html" target="_blank">An Antiracist Reading List</a>
+                    <span class="btn tags" onclick="findTag('decolonize')">Decolonize Your Mind</span>
+                    <span class="btn tags" onclick="findTag('systemic-racism')">Systemic Racism</span>
+                </p>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section id="contribute">
+      <div class="content-wrapper">
+        <article>
+          <h2>Do you have a resource you would like to share?</h2>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

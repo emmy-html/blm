@@ -252,16 +252,17 @@ header {
   h2 {
     line-height: .30rem;
   }
-  .tab {
+  .category {
     @include tab-container;
   }
-  /* Style the buttons that are used to open the tab content */ 
-  .tab button {
+  .category-button {
     @include tab-button;
+  }
+  .category-button:hover {
+    border-bottom: none;
   }
   /* Style the tab content */
   .tab-content {
-    display: none;
     min-height: 500px;
     overflow: scroll;
     animation: fade 1s;
@@ -313,7 +314,7 @@ header {
       justify-content: space-evenly;
       margin-top: 10px;
     }
-    .filterDiv {
+    .filterLink {
       display: none; /* Hide by default */
       margin: 0;
     }
@@ -326,9 +327,13 @@ header {
       background-color: #f1f1f1;
       border: none;
       cursor: pointer;
+      margin-left: 5px;
       outline: none;
       font-size: .75rem;
       @include tab-button;
+    }
+    .btn.tags {
+      margin: 3px 0px 0px 0px;
     }
   }
 }

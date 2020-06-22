@@ -3,6 +3,7 @@
     -webkit-transition: 1s color;
     transition: 1s color;
 }
+$blue-border: 2px solid $blue;
 
 .light-mode {
     /* Universal Styles */ 
@@ -13,9 +14,16 @@
         color: $black;
     }
     a:hover {
-        border-bottom: 2px solid $blue;
+        border-bottom: $blue-border;
         color: $red;
         @include link-transition;
+    }
+    .active-nav {
+        border-bottom: $blue-border;
+        color: $red;
+        &:visited {
+            color: $red;
+        }
     }
     h2 {
         color: $red;
@@ -32,29 +40,22 @@
     }
     /* Resources Tabs */
     #resources {
-        /* The tab */
-        .tab {
+        /* The Categories */
+        .category {
             background: none;
             overflow: hidden;
         }
-        /* Tab buttons */
-        .tab button {
-            background-color: inherit;
-            border: none;
+        /* Category buttons */
+        .category-button:hover {
+            background-color: $blue;
             color: $white;
         }
-        /* Change background color of buttons on hover */
-        .tab button:hover {
-            background-color: $red;
-        }
-        /* Active button class */ 
-        .tab button.active {
-            background-color: $blue;
-        }
-        .tab button:not(.active) {
-            color: $black;
+        /* Changes color depending on active page */
+        .category-button.active-cat {
+            background: $red;
+            color: $white;
             &:hover {
-                color: white;
+                background: $blue;
             }
         }
         .tab-content {
@@ -82,7 +83,9 @@
                 background: $red;
             }
             .btn:not(.active-filter) {
+                background: none;
                 &:hover {
+                    background: $red;
                     color: $white;
                 }
             }
@@ -90,6 +93,9 @@
             .btn.active-filter {
                 background: $blue;
                 color: $white;
+                &:hover {
+                    background: $red;
+                }
             }
         }
     }

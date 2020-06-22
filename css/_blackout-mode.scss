@@ -31,18 +31,18 @@ body.blackout-mode {
     }
     /* Resources Tabs */
     #resources {
-        .tab button {
+        .category button {
             background-color: inherit;
             border: none;
             color: $black;
         }
-        .tab button:hover {
+        .category button:hover {
             background-color: $orange;
         }
-        .tab button.active {
+        .category button.active {
             background-color: $blue;
         }
-        .tab button:not(.active) {
+        .category button:not(.active) {
             color: $white;
             &:hover {
                 color: $black;
@@ -51,6 +51,11 @@ body.blackout-mode {
         .tab-content {
             h3 {
                 color: $orange;
+            }
+            h4 {
+                span {
+                    color: $orange;
+                }
             }
             .tags {
                 color: $black;
@@ -62,6 +67,20 @@ body.blackout-mode {
                 &:nth-of-type(odd) {
                     background: $blue;
                 }
+            }
+            /* Filter buttons */ 
+            .btn:hover {
+                background: $orange;
+            }
+            .btn:not(.active-filter) {
+                color: $white;
+                &:hover {
+                    background: $orange;
+                    color: $black;
+                }
+            }
+            .btn.active-filter {
+                color: $black;
             }
         }
     }

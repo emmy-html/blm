@@ -101,26 +101,39 @@ body.blackout-mode {
     border: 10px solid #1e555c; }
     body.blackout-mode #hero .content-container span.black-lives {
       color: #ff9b54; }
-  body.blackout-mode #resources .tab button {
+  body.blackout-mode #resources .category button {
     background-color: inherit;
     border: none;
     color: #1b1b1c; }
-  body.blackout-mode #resources .tab button:hover {
+  body.blackout-mode #resources .category button:hover {
     background-color: #ff9b54; }
-  body.blackout-mode #resources .tab button.active {
+  body.blackout-mode #resources .category button.active {
     background-color: #1e555c; }
-  body.blackout-mode #resources .tab button:not(.active) {
+  body.blackout-mode #resources .category button:not(.active) {
     color: #f4f3ee; }
-    body.blackout-mode #resources .tab button:not(.active):hover {
+    body.blackout-mode #resources .category button:not(.active):hover {
       color: #1b1b1c; }
-  body.blackout-mode #resources .tab-content h3 {
-    color: #ff9b54; }
-  body.blackout-mode #resources .tab-content .tags {
-    color: #1b1b1c; }
-  body.blackout-mode #resources .tab-content span.tags:nth-of-type(even) {
-    background: #ff9b54; }
-  body.blackout-mode #resources .tab-content span.tags:nth-of-type(odd) {
-    background: #1e555c; }
+  body.blackout-mode #resources .tab-content {
+    /* Filter buttons */ }
+    body.blackout-mode #resources .tab-content h3 {
+      color: #ff9b54; }
+    body.blackout-mode #resources .tab-content h4 span {
+      color: #ff9b54; }
+    body.blackout-mode #resources .tab-content .tags {
+      color: #1b1b1c; }
+    body.blackout-mode #resources .tab-content span.tags:nth-of-type(even) {
+      background: #ff9b54; }
+    body.blackout-mode #resources .tab-content span.tags:nth-of-type(odd) {
+      background: #1e555c; }
+    body.blackout-mode #resources .tab-content .btn:hover {
+      background: #ff9b54; }
+    body.blackout-mode #resources .tab-content .btn:not(.active-filter) {
+      color: #f4f3ee; }
+      body.blackout-mode #resources .tab-content .btn:not(.active-filter):hover {
+        background: #ff9b54;
+        color: #1b1b1c; }
+    body.blackout-mode #resources .tab-content .btn.active-filter {
+      color: #1b1b1c; }
 
 /* Fonts & Colors */
 /* Animations */
@@ -139,6 +152,11 @@ body.blackout-mode {
     color: #720026;
     -webkit-transition: 1s color;
     transition: 1s color; }
+  .light-mode .active-nav {
+    border-bottom: 2px solid #1e555c;
+    color: #720026; }
+    .light-mode .active-nav:visited {
+      color: #720026; }
   .light-mode h2 {
     color: #720026; }
   .light-mode #hero {
@@ -148,25 +166,20 @@ body.blackout-mode {
       .light-mode #hero .content-container span.black-lives {
         color: #720026; }
   .light-mode #resources {
-    /* The tab */
-    /* Tab buttons */
-    /* Change background color of buttons on hover */
-    /* Active button class */ }
-    .light-mode #resources .tab {
+    /* The Categories */
+    /* Category buttons */
+    /* Changes color depending on active page */ }
+    .light-mode #resources .category {
       background: none;
       overflow: hidden; }
-    .light-mode #resources .tab button {
-      background-color: inherit;
-      border: none;
+    .light-mode #resources .category-button:hover {
+      background-color: #1e555c;
       color: #f4f3ee; }
-    .light-mode #resources .tab button:hover {
-      background-color: #720026; }
-    .light-mode #resources .tab button.active {
-      background-color: #1e555c; }
-    .light-mode #resources .tab button:not(.active) {
-      color: #1b1b1c; }
-      .light-mode #resources .tab button:not(.active):hover {
-        color: white; }
+    .light-mode #resources .category-button.active-cat {
+      background: #720026;
+      color: #f4f3ee; }
+      .light-mode #resources .category-button.active-cat:hover {
+        background: #1e555c; }
     .light-mode #resources .tab-content {
       border: none;
       /* Filter buttons */
@@ -184,11 +197,16 @@ body.blackout-mode {
         background: none; }
       .light-mode #resources .tab-content .btn:hover {
         background: #720026; }
-      .light-mode #resources .tab-content .btn:not(.active-filter):hover {
-        color: #f4f3ee; }
+      .light-mode #resources .tab-content .btn:not(.active-filter) {
+        background: none; }
+        .light-mode #resources .tab-content .btn:not(.active-filter):hover {
+          background: #720026;
+          color: #f4f3ee; }
       .light-mode #resources .tab-content .btn.active-filter {
         background: #1e555c;
         color: #f4f3ee; }
+        .light-mode #resources .tab-content .btn.active-filter:hover {
+          background: #720026; }
 
 /* Fonts & Colors */
 /* Animations */
@@ -322,16 +340,15 @@ header {
 /* Resources Tabs */
 #resources {
   margin-top: 35px;
-  /* Style the buttons that are used to open the tab content */
   /* Style the tab content */ }
   #resources h2 {
     line-height: .30rem; }
-  #resources .tab {
+  #resources .category {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center; }
-  #resources .tab button {
+  #resources .category-button {
     font-weight: 700;
     margin-top: 5px;
     min-width: 80px;
@@ -341,8 +358,9 @@ header {
     text-align: center;
     text-transform: uppercase;
     transition: 1s; }
+  #resources .category-button:hover {
+    border-bottom: none; }
   #resources .tab-content {
-    display: none;
     min-height: 500px;
     overflow: scroll;
     animation: fade 1s;
@@ -387,7 +405,7 @@ header {
       flex-flow: column wrap;
       justify-content: space-evenly;
       margin-top: 10px; }
-    #resources .tab-content .filterDiv {
+    #resources .tab-content .filterLink {
       display: none;
       /* Hide by default */
       margin: 0; }
@@ -397,6 +415,7 @@ header {
       background-color: #f1f1f1;
       border: none;
       cursor: pointer;
+      margin-left: 5px;
       outline: none;
       font-size: .75rem;
       font-weight: 700;
@@ -408,6 +427,8 @@ header {
       text-align: center;
       text-transform: uppercase;
       transition: 1s; }
+    #resources .tab-content .btn.tags {
+      margin: 3px 0px 0px 0px; }
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) {

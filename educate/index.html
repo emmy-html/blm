@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <title>Protect Black Lives | A collection of resources</title>
+  <meta name="description" content="resources to protect black lives">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main.scss">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="light-mode fade" id="body">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#" class="about">About</a></li>
+        <li><a href="#contribute">Contribute</a></li>
+      </ul>
+    </nav>
+    <aside id="about">
+      <p>Protect Black Lives was created by <a href="https://github.com/emmy-html" target="_blank">Emmy Jordan</a> as a resource to educate and spread awareness regarding the police brutality crisis that affects Black lives worldwide. This website will provide racism on how to combat and educate yourself on the consequences of systemic racism, and police brutality.</p>
+    </aside>
+    <article class="toggle-mode">
+      <p id="toggle-description">Light Mode</p>
+      <label class="switch">
+        <input type="checkbox" id="mode-toggle">
+        <span class="slider round" onclick=toggle()></span>
+      </label>
+    </article>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="content-wrapper">
+        <article class="content-container">
+          <h1>Protect
+            <span class="black-lives">Black</span>
+            <span>Lives</span>
+          </h1>
+        </article>
+        <aside>
+          <p>An open source collection of resources in the interest of protecting black lives.</p>
+        </aside>
+      </div>
+    </section>
+    <section id="resources">
+      <div class="content-wrapper">
+        <h2>I want to...</h2>
+        <!-- Categories -->
+        <div class="category">
+            <a href="../donate/index.html" class="category-button">Donate</a>
+            <a href="index.html" class="category-button active-cat">Educate</a>
+            <a href="../heal/index.html" class="category-button">Heal</a>
+            <a href="../petition/index.html" class="category-button">Petition</a>
+            <a href="../protest/index.html" class="category-button">Protest</a>
+        </div>
+        <div class="tab-content">
+            <h3>Myself & others
+            </h3>
+            <h4>Filter by <span>Topic</span></h4>
+              <div class="filter-buttons">
+                <button class="btn active-filter" id="default" onclick="findTag('all')">Show all</button>
+                <button class="btn" onclick="findTag('abolition')">Abolition</button>
+                <button class="btn" onclick="findTag('accessible-education')">Accessible</button>
+                <button class="btn" onclick="findTag('black-fem')">Black Feminist Spotlight</button>
+                <button class="btn" onclick="findTag('books')">Books</button>
+                <button class="btn" onclick="findTag('speech')">Speeches</button>
+              </div>
+              <!-- The filterable elements. Note that some have multiple class names. This can be used if they belong to multiple categories-->
+              <div class="filter-content-container">
+                <p class="filterLink abolition">
+                  <a href="https://www.8toabolition.com/" target="_blank">8toAbolition</a>
+                  <span class="btn tags" onclick="findTag('abolition')">Abolition</span>
+                </p>
+                <p class="filterLink black-fem">
+                  <a href="https://radicalreads.com/angela-davis-favorite-books/" target="_blank">Angela Davis' Favorite Books</a> via Radical Reads
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span>
+                </p>
+                <p class="filterLink abolition black-fem">
+                  <a href="https://www.oprahmag.com/entertainment/books/g32803115/angela-davis-books/" target="_blank">9 Essential Angela Davis Books to Add to Your Shelf</a>
+                  <span class="btn tags" onclick="findTag('abolition')">Abolition</span>
+                  <span class="btn tags" onclick="findTag('orgs')">Black Feminist Spotlight</span> 
+                </p>
+                <p class="filterLink black-fem books">
+                  <a href="https://www.okayafrica.com/black-revolutionary-literature-books/" target="_blank">13 Books On Black Resistance & Revolution</a>
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span> 
+                  <span class="btn tags" onclick="findTag('books')">Books</span>
+                </p>
+                <p class="filterLink accessible-education black-fem books">
+                  <a href="https://twitter.com/sarphrodite/status/1268254992873467904" target="_blank">Book Reccomendations With Text PDF</a>
+                  <span class="btn tags" onclick="findTag('accessible-education')">Accessible</span>
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span> 
+                  <span class="btn tags" onclick="findTag('books')">Books</span>
+                  <span class="btn tags" onclick="findTag('speech')">Speech</span> 
+                </p>
+                <p class="filterLink abolition accessible-education black-fem speech">
+                  <a href="https://open.spotify.com/playlist/0CmjOgMVAw4N8f08qUVHbJ?si=VEXo5r3pSjKAm2TeZTnMhw">Angela Davis Speeches & Interviews Spotify Playlist</a>
+                  <span class="btn tags" onclick="findTag('abolition')">Abolition</span>
+                  <span class="btn tags" onclick="findTag('accessible-education')">Accessible</span>
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span> 
+                  <span class="btn tags" onclick="findTag('speech')">Speeches</span> 
+                </p>
+                <p class="filterLink accessible-education black-fem speech">
+                  <a href="https://open.spotify.com/playlist/0J5GVYMrT8wbAkaNbIcCLN?si=Rju-o1cKTE6YJo5M5-qr-A">Revolution Playlist by Rachel Cargle</a>
+                  <span class="btn tags" onclick="findTag('accessible-education')">Accessible</span>
+                  <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span> 
+                  <span class="btn tags" onclick="findTag('speech')">Speeches</span> 
+              </div>
+          </div>
+      </div>
+    </section>
+    <section id="contribute">
+      <div class="content-wrapper">
+        <article>
+          <h2>Do you have a resource you would like to share?</h2>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

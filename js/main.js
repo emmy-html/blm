@@ -18,30 +18,13 @@ function toggle() {
 $(".about").click(function() {
     $("#about").fadeToggle('linear');
 })
-// resources tabs
-function openResource(evt, topic) {
-    var i, tabContent, tabLinks;
-    tabContent = document.getElementsByClassName("tab-content");
-    // hide all tab content by default
-    for (i = 0; i < tabContent.length; i++) {
-        tabContent[i].style.display = "none";
-    }
-    // get all tab links and remove the active class
-    tabLinks = document.getElementsByClassName("tab-links");
-    for (i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
-    }
-    // show the current tab and add an active class to the button that opened the tab
-    document.getElementById(topic).style.display = "block";
-    evt.currentTarget.className += " active";
-}
 // show a resource tab by default
 document.getElementById("default").click();
 // filter through resources
 filterSelection("all")
 function filterSelection(c) {
     var x, i;
-    x = document.getElementsByClassName("filterDiv");
+    x = document.getElementsByClassName("filterLink");
     if (c === "all") c = "";
     // Adds the "show" class to the filtered elements, and remove the "show" class from the elements that are not selected
     for (i = 0; i < x.length; i++) {
@@ -80,4 +63,8 @@ for (var i = 0; i < btns.length; i++) {
         current[0].className = current[0].className.replace(" active-filter", "");
         this.className += " active-filter";
     });
+}
+// testing nesting the function
+function findTag(c) {
+    filterSelection(c);
 }

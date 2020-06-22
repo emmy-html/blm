@@ -5,7 +5,7 @@
 }
 $teal-border: 2px solid $light-teal;
 
-body.blackout-mode {
+body[data-theme="dark"] {
     /* Universal Styles */ 
     background: $black;
     color: $white;
@@ -85,11 +85,15 @@ body.blackout-mode {
                 }
             }
             /* Filter buttons */ 
+            .btn {
+                background: $purple;
+                color: $black;
+            }
             .btn:hover {
                 background: $purple;
             }
             .btn:not(.active-filter) {
-                color: $white;
+                color: $black;
                 &:hover {
                     background: $light-teal;
                     color: $black;

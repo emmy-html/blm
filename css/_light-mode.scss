@@ -5,7 +5,7 @@
 }
 $blue-border: 2px solid $blue;
 
-.light-mode {
+body[data-theme="light"] {
     /* Universal Styles */ 
     background: $white;
     color: $black;

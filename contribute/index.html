@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body class="light-mode fade" id="body">
+<body class="fade" data-theme="light" id="body">
     <header>
         <nav>
             <ul>
@@ -33,11 +33,11 @@
                 consequences of systemic racism, and police brutality.</p>
         </aside>
         <article class="toggle-mode">
-            <p id="toggle-description">Light Mode</p>
-            <label class="switch">
-                <input type="checkbox" id="mode-toggle">
-                <span class="slider round" onclick=toggle()></span>
-            </label>
+          <p id="toggle-description">Light Mode</p>
+          <label class="switch">
+            <input type="checkbox" id="themeSwitch" onclick="toggle()">
+            <span class="slider round"></span>
+          </label>
         </article>
     </header>
 

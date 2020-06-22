@@ -81,7 +81,7 @@ textarea {
 /* Fonts & Colors */
 /* Animations */
 /* Fonts */
-body.blackout-mode {
+body[data-theme="dark"] {
   /* Universal Styles */
   background: #1b1b1c;
   color: #f4f3ee;
@@ -89,80 +89,83 @@ body.blackout-mode {
   /* Hero */
   /* Resources Tabs */
   /* Contribution Section */ }
-  body.blackout-mode a:link,
-  body.blackout-mode a:visited {
+  body[data-theme="dark"] a:link,
+  body[data-theme="dark"] a:visited {
     color: #f4f3ee; }
-  body.blackout-mode a:hover {
+  body[data-theme="dark"] a:hover {
     border-bottom: 2px solid #70C1B3;
     color: #C3B0F7;
     -webkit-transition: 1s color;
     transition: 1s color; }
-  body.blackout-mode .active-nav {
+  body[data-theme="dark"] .active-nav {
     color: #C3B0F7; }
-    body.blackout-mode .active-nav:visited {
+    body[data-theme="dark"] .active-nav:visited {
       color: #C3B0F7; }
-  body.blackout-mode h2 {
+  body[data-theme="dark"] h2 {
     color: #C3B0F7; }
-  body.blackout-mode #hero .content-container {
+  body[data-theme="dark"] #hero .content-container {
     border: 10px solid #2A9D8F; }
-    body.blackout-mode #hero .content-container span.black-lives {
+    body[data-theme="dark"] #hero .content-container span.black-lives {
       color: #C3B0F7; }
-  body.blackout-mode #resources {
+  body[data-theme="dark"] #resources {
     /* The Categories */
     /* Category buttons */
     /* Changes color depending on active page */
     /* Description beneath categories */ }
-    body.blackout-mode #resources .category {
+    body[data-theme="dark"] #resources .category {
       background: none;
       overflow: hidden; }
-    body.blackout-mode #resources .category-button:hover {
+    body[data-theme="dark"] #resources .category-button:hover {
       background-color: #70C1B3;
       color: #1b1b1c; }
-    body.blackout-mode #resources .category-button.active-cat {
+    body[data-theme="dark"] #resources .category-button.active-cat {
       background: #2A9D8F;
       color: #1b1b1c; }
-      body.blackout-mode #resources .category-button.active-cat:hover {
+      body[data-theme="dark"] #resources .category-button.active-cat:hover {
         background: #C3B0F7;
         color: #1b1b1c; }
-    body.blackout-mode #resources h3 {
+    body[data-theme="dark"] #resources h3 {
       color: #C3B0F7; }
-    body.blackout-mode #resources .tab-content {
+    body[data-theme="dark"] #resources .tab-content {
       /* Filter buttons */ }
-      body.blackout-mode #resources .tab-content h3 {
+      body[data-theme="dark"] #resources .tab-content h3 {
         color: #C3B0F7; }
-      body.blackout-mode #resources .tab-content h4 span {
+      body[data-theme="dark"] #resources .tab-content h4 span {
         color: #70C1B3; }
-      body.blackout-mode #resources .tab-content .tags {
+      body[data-theme="dark"] #resources .tab-content .tags {
         color: #1b1b1c; }
-      body.blackout-mode #resources .tab-content span.tags:nth-of-type(even) {
+      body[data-theme="dark"] #resources .tab-content span.tags:nth-of-type(even) {
         background: #C3B0F7;
         color: #1b1b1c; }
-      body.blackout-mode #resources .tab-content span.tags:nth-of-type(odd) {
+      body[data-theme="dark"] #resources .tab-content span.tags:nth-of-type(odd) {
         background: #2A9D8F;
         color: #1b1b1c; }
-      body.blackout-mode #resources .tab-content .btn:hover {
+      body[data-theme="dark"] #resources .tab-content .btn {
+        background: #C3B0F7;
+        color: #1b1b1c; }
+      body[data-theme="dark"] #resources .tab-content .btn:hover {
         background: #C3B0F7; }
-      body.blackout-mode #resources .tab-content .btn:not(.active-filter) {
-        color: #f4f3ee; }
-        body.blackout-mode #resources .tab-content .btn:not(.active-filter):hover {
+      body[data-theme="dark"] #resources .tab-content .btn:not(.active-filter) {
+        color: #1b1b1c; }
+        body[data-theme="dark"] #resources .tab-content .btn:not(.active-filter):hover {
           background: #70C1B3;
           color: #1b1b1c;
           opacity: 1; }
-      body.blackout-mode #resources .tab-content .btn.active-filter {
+      body[data-theme="dark"] #resources .tab-content .btn.active-filter {
         background: #2A9D8F;
         color: #1b1b1c; }
-        body.blackout-mode #resources .tab-content .btn.active-filter:hover {
+        body[data-theme="dark"] #resources .tab-content .btn.active-filter:hover {
           background: #C3B0F7; }
-  body.blackout-mode #contribute span a:link,
-  body.blackout-mode #contribute span a:visited {
+  body[data-theme="dark"] #contribute span a:link,
+  body[data-theme="dark"] #contribute span a:visited {
     color: #2A9D8F; }
-  body.blackout-mode #contribute span a:hover {
+  body[data-theme="dark"] #contribute span a:hover {
     color: #70C1B3; }
 
 /* Fonts & Colors */
 /* Animations */
 /* Fonts */
-.light-mode {
+body[data-theme="light"] {
   /* Universal Styles */
   background: #f4f3ee;
   color: #1b1b1c;
@@ -170,73 +173,73 @@ body.blackout-mode {
   /* Hero */
   /* Resources Tabs */
   /* Contribution Section */ }
-  .light-mode a:link,
-  .light-mode a:visited {
+  body[data-theme="light"] a:link,
+  body[data-theme="light"] a:visited {
     color: #1b1b1c; }
-  .light-mode a:hover {
+  body[data-theme="light"] a:hover {
     border-bottom: 2px solid #1e555c;
     color: #720026;
     -webkit-transition: 1s color;
     transition: 1s color; }
-  .light-mode .active-nav {
+  body[data-theme="light"] .active-nav {
     border-bottom: 2px solid #1e555c;
     color: #720026; }
-    .light-mode .active-nav:visited {
+    body[data-theme="light"] .active-nav:visited {
       color: #720026; }
-  .light-mode h2 {
+  body[data-theme="light"] h2 {
     color: #720026; }
-  .light-mode #hero {
+  body[data-theme="light"] #hero {
     /* Protect Black Lives Intro */ }
-    .light-mode #hero .content-container {
+    body[data-theme="light"] #hero .content-container {
       border: 10px solid #1e555c; }
-      .light-mode #hero .content-container span.black-lives {
+      body[data-theme="light"] #hero .content-container span.black-lives {
         color: #720026; }
-  .light-mode #resources {
+  body[data-theme="light"] #resources {
     /* The Categories */
     /* Category buttons */
     /* Changes color depending on active page */ }
-    .light-mode #resources h3 {
+    body[data-theme="light"] #resources h3 {
       color: #720026; }
-    .light-mode #resources .category {
+    body[data-theme="light"] #resources .category {
       background: none;
       overflow: hidden; }
-    .light-mode #resources .category-button:hover {
+    body[data-theme="light"] #resources .category-button:hover {
       background-color: #1e555c;
       color: #f4f3ee; }
-    .light-mode #resources .category-button.active-cat {
+    body[data-theme="light"] #resources .category-button.active-cat {
       background: #720026;
       color: #f4f3ee; }
-      .light-mode #resources .category-button.active-cat:hover {
+      body[data-theme="light"] #resources .category-button.active-cat:hover {
         background: #1e555c; }
-    .light-mode #resources .tab-content {
+    body[data-theme="light"] #resources .tab-content {
       border: none;
       /* Filter buttons */
       /* Add a background color to the button on hover */
       /* Change background to active class */ }
-      .light-mode #resources .tab-content .tags {
+      body[data-theme="light"] #resources .tab-content .tags {
         color: #f4f3ee; }
-      .light-mode #resources .tab-content span.tags:nth-of-type(even) {
+      body[data-theme="light"] #resources .tab-content span.tags:nth-of-type(even) {
         background: #720026; }
-      .light-mode #resources .tab-content span.tags:nth-of-type(odd) {
+      body[data-theme="light"] #resources .tab-content span.tags:nth-of-type(odd) {
         background: #1e555c; }
-      .light-mode #resources .tab-content .btn {
+      body[data-theme="light"] #resources .tab-content .btn {
         background: none; }
-      .light-mode #resources .tab-content .btn:hover {
+      body[data-theme="light"] #resources .tab-content .btn:hover {
         background: #720026; }
-      .light-mode #resources .tab-content .btn:not(.active-filter) {
+      body[data-theme="light"] #resources .tab-content .btn:not(.active-filter) {
         background: none; }
-        .light-mode #resources .tab-content .btn:not(.active-filter):hover {
+        body[data-theme="light"] #resources .tab-content .btn:not(.active-filter):hover {
           background: #720026;
           color: #f4f3ee; }
-      .light-mode #resources .tab-content .btn.active-filter {
+      body[data-theme="light"] #resources .tab-content .btn.active-filter {
         background: #1e555c;
         color: #f4f3ee; }
-        .light-mode #resources .tab-content .btn.active-filter:hover {
+        body[data-theme="light"] #resources .tab-content .btn.active-filter:hover {
           background: #720026; }
-  .light-mode #contribute span a:link,
-  .light-mode #contribute span a:visited {
+  body[data-theme="light"] #contribute span a:link,
+  body[data-theme="light"] #contribute span a:visited {
     color: #1e555c; }
-  .light-mode #contribute span a:hover {
+  body[data-theme="light"] #contribute span a:hover {
     color: #720026; }
 
 /* Fonts & Colors */

@@ -462,14 +462,16 @@ header {
     #resources .tab-content .btn.tags {
       margin: 3px 0px 0px 0px; }
 
-/* Contribution Section */
-#contribute h2 {
-  text-align: center; }
-#contribute p {
-  margin: 0 auto;
-  min-width: 200px;
-  max-width: 320px;
-  text-align: justify; }
+/* Footer + Contribution Section */
+#contribute {
+  margin: 25px 0px; }
+  #contribute h2 {
+    text-align: center; }
+  #contribute p {
+    margin: 0 auto;
+    min-width: 200px;
+    max-width: 320px;
+    text-align: justify; }
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) {

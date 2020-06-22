@@ -110,7 +110,8 @@ body.blackout-mode {
   body.blackout-mode #resources {
     /* The Categories */
     /* Category buttons */
-    /* Changes color depending on active page */ }
+    /* Changes color depending on active page */
+    /* Description beneath categories */ }
     body.blackout-mode #resources .category {
       background: none;
       overflow: hidden; }
@@ -123,6 +124,8 @@ body.blackout-mode {
       body.blackout-mode #resources .category-button.active-cat:hover {
         background: #C3B0F7;
         color: #1b1b1c; }
+    body.blackout-mode #resources h3 {
+      color: #C3B0F7; }
     body.blackout-mode #resources .tab-content {
       /* Filter buttons */ }
       body.blackout-mode #resources .tab-content h3 {
@@ -192,6 +195,8 @@ body.blackout-mode {
     /* The Categories */
     /* Category buttons */
     /* Changes color depending on active page */ }
+    .light-mode #resources h3 {
+      color: #720026; }
     .light-mode #resources .category {
       background: none;
       overflow: hidden; }
@@ -208,8 +213,6 @@ body.blackout-mode {
       /* Filter buttons */
       /* Add a background color to the button on hover */
       /* Change background to active class */ }
-      .light-mode #resources .tab-content h3 {
-        color: #720026; }
       .light-mode #resources .tab-content .tags {
         color: #f4f3ee; }
       .light-mode #resources .tab-content span.tags:nth-of-type(even) {
@@ -371,6 +374,10 @@ header {
   /* Style the content */ }
   #resources h2 {
     line-height: .30rem; }
+  #resources h3 {
+    line-height: 1.25rem; }
+    #resources h3 span {
+      display: block; }
   #resources .category {
     display: flex;
     flex-flow: row wrap;
@@ -398,10 +405,6 @@ header {
     /* Filter through the resources */
     /* The "show" class is added to the filtered elements */
     /* Style the buttons */ }
-    #resources .tab-content h3 {
-      line-height: 1.25rem; }
-      #resources .tab-content h3 span {
-        display: block; }
     #resources .tab-content h4 {
       line-height: .10rem; }
       #resources .tab-content h4 span {
@@ -485,11 +488,31 @@ header {
 /* Desktop Styles */
 @media screen and (min-width: 1200px) {
   #resources {
-    min-width: 800px;
-    max-width: 810px; }
+    min-width: 1000px;
+    max-width: 1100px; }
     #resources .category-button {
       font-size: 2rem;
-      padding: 5px 10px; } }
+      padding: 5px 10px; }
+    #resources .tab-content {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%; }
+      #resources .tab-content .filter-buttons {
+        display: inline-flex;
+        flex-direction: column;
+        margin-right: 50px; }
+        #resources .tab-content .filter-buttons .btn {
+          min-width: 130px;
+          max-width: 150px;
+          min-height: 50px;
+          max-height: 80px; }
+      #resources .tab-content .filter-content-container {
+        display: flex;
+        align-content: flex-start;
+        min-width: 900px;
+        max-width: 1100px; }
+      #resources .tab-content p.filterLink:nth-of-type(1) {
+        padding-top: 0px; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

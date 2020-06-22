@@ -252,6 +252,12 @@ header {
   h2 {
     line-height: .30rem;
   }
+  h3 {
+    line-height: 1.25rem;
+    span {
+      display: block;
+    }
+  }
   .category {
     @include tab-container;
   }
@@ -267,12 +273,6 @@ header {
     min-height: 500px;
     overflow: scroll;
     animation: fade 1s;
-    h3 {
-      line-height: 1.25rem;
-      span {
-        display: block;
-      }
-    }
     h4 {
       line-height: .10rem;
       span {
@@ -371,11 +371,36 @@ header {
 /* Desktop Styles */ 
 @media screen and (min-width: 1200px) {
   #resources {
-    min-width: 800px;
-    max-width: 810px;
+    min-width: 1000px;
+    max-width: 1100px;
     .category-button {
       font-size: 2rem;
       padding: 5px 10px;
+    }
+    .tab-content {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      .filter-buttons {
+        display: inline-flex;
+        flex-direction: column;
+        margin-right: 50px;
+        .btn {
+          min-width: 130px;
+          max-width: 150px;
+          min-height: 50px;
+          max-height: 80px;
+        }
+      }
+      .filter-content-container {
+        display: flex;
+        align-content: flex-start;
+        min-width: 900px;
+        max-width: 1100px;
+      }
+      p.filterLink:nth-of-type(1) {
+        padding-top: 0px;
+      }
     }
   }
 }

@@ -62,10 +62,12 @@
             <a href="../petition/index.html" class="category-button">Petition</a>
             <a href="../protest/index.html" class="category-button">Protest</a>
         </div>
+        <h3>Myself & others
+        </h3>
         <div class="tab-content">
-            <h3>Myself & others
-            </h3>
-            <h4>Filter by <span>Topic</span></h4>
+          <article>
+            <!-- Education Tag Filters -->
+          <h4>Filter by <span>Topic</span></h4>
               <div class="filter-buttons">
                 <button class="btn active-filter" id="default" onclick="findTag('all')">Show all</button>
                 <button class="btn" onclick="findTag('abolition')">Abolition</button>
@@ -74,7 +76,9 @@
                 <button class="btn" onclick="findTag('books')">Books</button>
                 <button class="btn" onclick="findTag('speech')">Speeches</button>
               </div>
-              <!-- The filterable elements. Note that some have multiple class names. This can be used if they belong to multiple categories-->
+            </article>
+            <article>
+              <!-- Education Resources-->
               <div class="filter-content-container">
                 <p class="filterLink abolition">
                   <a href="https://www.8toabolition.com/" target="_blank">8toAbolition</a>
@@ -112,8 +116,10 @@
                   <a href="https://open.spotify.com/playlist/0J5GVYMrT8wbAkaNbIcCLN?si=Rju-o1cKTE6YJo5M5-qr-A">Revolution Playlist by Rachel Cargle</a>
                   <span class="btn tags" onclick="findTag('accessible-education')">Accessible</span>
                   <span class="btn tags" onclick="findTag('black-fem')">Black Feminist Spotlight</span> 
-                  <span class="btn tags" onclick="findTag('speech')">Speeches</span> 
+                  <span class="btn tags" onclick="findTag('speech')">Speeches</span>
+                </p> 
               </div>
+            </article>
           </div>
       </div>
     </section>

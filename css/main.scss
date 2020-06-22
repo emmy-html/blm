@@ -126,8 +126,8 @@ a:visited {
 header {
   nav {
     margin: 0 auto;
-    min-width: 190px;
-    max-width: 200px;
+    min-width: 290px;
+    max-width: 300px;
       ul {
         display: flex;
         justify-content: space-around;
@@ -246,7 +246,7 @@ header {
     }
   }
 }
-/* Resources Tabs */
+/* Resources Content */
 #resources {
   margin-top: 35px;
   h2 {
@@ -261,13 +261,14 @@ header {
   .category-button:hover {
     border-bottom: none;
   }
-  /* Style the tab content */
+  /* Style the content */
   .tab-content {
+    font-size: 1.25rem;
     min-height: 500px;
     overflow: scroll;
     animation: fade 1s;
     h3 {
-      line-height: 1rem;
+      line-height: 1.25rem;
       span {
         display: block;
       }
@@ -289,7 +290,7 @@ header {
     /* The resource tags */
     .tags {
       display: inline-block;
-      font-size: .75rem;
+      font-size: 1rem;
       font-weight: $bold;
       margin: 2px 0px 5px 0px;
       padding: 2.5px 5px;
@@ -301,12 +302,17 @@ header {
       }
     }
     a {
+      line-height: 1.75rem;
       margin-right: 5px;
     }
     /* Filter through the resources */
     .filter-buttons {
-      @include tab-container;
+      display: flex;
+      flex-flow: row wrap;
       justify-content: flex-start;
+      .btn {
+        margin-right: 5px;
+      }
     }
     .filter-content-container {
       display: flex;
@@ -317,6 +323,7 @@ header {
     .filterLink {
       display: none; /* Hide by default */
       margin: 0;
+      padding-top: 10px;
     }
     /* The "show" class is added to the filtered elements */
     .show {
@@ -327,14 +334,25 @@ header {
       background-color: #f1f1f1;
       border: none;
       cursor: pointer;
-      margin-left: 5px;
       outline: none;
-      font-size: .75rem;
+      font-size: 1rem;
       @include tab-button;
     }
     .btn.tags {
       margin: 3px 0px 0px 0px;
     }
+  }
+}
+/* Contribution Section */
+#contribute {
+  h2 {
+    text-align: center;
+  }
+  p {
+    margin: 0 auto;
+    min-width: 200px;
+    max-width: 320px;
+    text-align: justify;
   }
 }
 /* Tablet Styles */ 

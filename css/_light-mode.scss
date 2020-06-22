@@ -18,6 +18,7 @@ $blue-border: 2px solid $blue;
         color: $red;
         @include link-transition;
     }
+    /* Active Navigation Link */
     .active-nav {
         border-bottom: $blue-border;
         color: $red;
@@ -98,5 +99,17 @@ $blue-border: 2px solid $blue;
                 }
             }
         }
+    }
+    /* Contribution Section */
+    #contribute {
+        span {
+            a:link,
+            a:visited {
+              color: $blue;
+            }
+            a:hover {
+              color: $red;
+            }
+          }
     }
 }

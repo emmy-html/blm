@@ -13,9 +13,16 @@ body.blackout-mode {
         color: $white;
     }
     a:hover {
-        border-bottom: 2px solid $blue;
+        border-bottom: 2px solid $teal;
         color: $orange;
         @include link-transition;
+    }
+    /* Active Navigation Link */
+    .active-nav {
+        color: $orange;
+        &:visited {
+            color: $orange;
+        }
     }
     h2 {
         color: $orange;
@@ -23,7 +30,7 @@ body.blackout-mode {
     /* Hero */ 
     #hero {
         .content-container {
-            border: 10px solid $blue;
+            border: 10px solid $teal;
             span.black-lives {
                 color: $orange;
             }
@@ -31,20 +38,22 @@ body.blackout-mode {
     }
     /* Resources Tabs */
     #resources {
-        .category button {
-            background-color: inherit;
-            border: none;
+        /* The Categories */
+        .category {
+            background: none;
+            overflow: hidden;
+        }
+        /* Category buttons */
+        .category-button:hover {
+            background-color: $light-teal;
             color: $black;
         }
-        .category button:hover {
-            background-color: $orange;
-        }
-        .category button.active {
-            background-color: $blue;
-        }
-        .category button:not(.active) {
-            color: $white;
+        /* Changes color depending on active page */
+        .category-button.active-cat {
+            background: $teal;
+            color: $black;
             &:hover {
+                background: $orange;
                 color: $black;
             }
         }
@@ -54,7 +63,7 @@ body.blackout-mode {
             }
             h4 {
                 span {
-                    color: $orange;
+                    color: $light-teal;
                 }
             }
             .tags {
@@ -63,9 +72,11 @@ body.blackout-mode {
             span.tags {
                 &:nth-of-type(even) {
                     background: $orange;
+                    color: $black;
                 }
                 &:nth-of-type(odd) {
-                    background: $blue;
+                    background: $teal;
+                    color: $black;
                 }
             }
             /* Filter buttons */ 
@@ -75,13 +86,30 @@ body.blackout-mode {
             .btn:not(.active-filter) {
                 color: $white;
                 &:hover {
-                    background: $orange;
+                    background: $light-teal;
                     color: $black;
+                    opacity: 1;
                 }
             }
             .btn.active-filter {
+                background: $teal;
                 color: $black;
+                &:hover {
+                    background: $orange;
+                }
             }
         }
+    }
+    /* Contribution Section */
+    #contribute {
+        span {
+            a:link,
+            a:visited {
+              color: $teal;
+            }
+            a:hover {
+              color: $light-teal;
+            }
+          }
     }
 }

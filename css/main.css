@@ -85,55 +85,76 @@ body.blackout-mode {
   /* Universal Styles */
   background: #1b1b1c;
   color: #f4f3ee;
+  /* Active Navigation Link */
   /* Hero */
-  /* Resources Tabs */ }
+  /* Resources Tabs */
+  /* Contribution Section */ }
   body.blackout-mode a:link,
   body.blackout-mode a:visited {
     color: #f4f3ee; }
   body.blackout-mode a:hover {
-    border-bottom: 2px solid #1e555c;
+    border-bottom: 2px solid #2A9D8F;
     color: #ff9b54;
     -webkit-transition: 1s color;
     transition: 1s color; }
+  body.blackout-mode .active-nav {
+    color: #ff9b54; }
+    body.blackout-mode .active-nav:visited {
+      color: #ff9b54; }
   body.blackout-mode h2 {
     color: #ff9b54; }
   body.blackout-mode #hero .content-container {
-    border: 10px solid #1e555c; }
+    border: 10px solid #2A9D8F; }
     body.blackout-mode #hero .content-container span.black-lives {
       color: #ff9b54; }
-  body.blackout-mode #resources .category button {
-    background-color: inherit;
-    border: none;
-    color: #1b1b1c; }
-  body.blackout-mode #resources .category button:hover {
-    background-color: #ff9b54; }
-  body.blackout-mode #resources .category button.active {
-    background-color: #1e555c; }
-  body.blackout-mode #resources .category button:not(.active) {
-    color: #f4f3ee; }
-    body.blackout-mode #resources .category button:not(.active):hover {
+  body.blackout-mode #resources {
+    /* The Categories */
+    /* Category buttons */
+    /* Changes color depending on active page */ }
+    body.blackout-mode #resources .category {
+      background: none;
+      overflow: hidden; }
+    body.blackout-mode #resources .category-button:hover {
+      background-color: #70C1B3;
       color: #1b1b1c; }
-  body.blackout-mode #resources .tab-content {
-    /* Filter buttons */ }
-    body.blackout-mode #resources .tab-content h3 {
-      color: #ff9b54; }
-    body.blackout-mode #resources .tab-content h4 span {
-      color: #ff9b54; }
-    body.blackout-mode #resources .tab-content .tags {
+    body.blackout-mode #resources .category-button.active-cat {
+      background: #2A9D8F;
       color: #1b1b1c; }
-    body.blackout-mode #resources .tab-content span.tags:nth-of-type(even) {
-      background: #ff9b54; }
-    body.blackout-mode #resources .tab-content span.tags:nth-of-type(odd) {
-      background: #1e555c; }
-    body.blackout-mode #resources .tab-content .btn:hover {
-      background: #ff9b54; }
-    body.blackout-mode #resources .tab-content .btn:not(.active-filter) {
-      color: #f4f3ee; }
-      body.blackout-mode #resources .tab-content .btn:not(.active-filter):hover {
+      body.blackout-mode #resources .category-button.active-cat:hover {
         background: #ff9b54;
         color: #1b1b1c; }
-    body.blackout-mode #resources .tab-content .btn.active-filter {
-      color: #1b1b1c; }
+    body.blackout-mode #resources .tab-content {
+      /* Filter buttons */ }
+      body.blackout-mode #resources .tab-content h3 {
+        color: #ff9b54; }
+      body.blackout-mode #resources .tab-content h4 span {
+        color: #70C1B3; }
+      body.blackout-mode #resources .tab-content .tags {
+        color: #1b1b1c; }
+      body.blackout-mode #resources .tab-content span.tags:nth-of-type(even) {
+        background: #ff9b54;
+        color: #1b1b1c; }
+      body.blackout-mode #resources .tab-content span.tags:nth-of-type(odd) {
+        background: #2A9D8F;
+        color: #1b1b1c; }
+      body.blackout-mode #resources .tab-content .btn:hover {
+        background: #ff9b54; }
+      body.blackout-mode #resources .tab-content .btn:not(.active-filter) {
+        color: #f4f3ee; }
+        body.blackout-mode #resources .tab-content .btn:not(.active-filter):hover {
+          background: #70C1B3;
+          color: #1b1b1c;
+          opacity: 1; }
+      body.blackout-mode #resources .tab-content .btn.active-filter {
+        background: #2A9D8F;
+        color: #1b1b1c; }
+        body.blackout-mode #resources .tab-content .btn.active-filter:hover {
+          background: #ff9b54; }
+  body.blackout-mode #contribute span a:link,
+  body.blackout-mode #contribute span a:visited {
+    color: #2A9D8F; }
+  body.blackout-mode #contribute span a:hover {
+    color: #70C1B3; }
 
 /* Fonts & Colors */
 /* Animations */
@@ -142,8 +163,10 @@ body.blackout-mode {
   /* Universal Styles */
   background: #f4f3ee;
   color: #1b1b1c;
+  /* Active Navigation Link */
   /* Hero */
-  /* Resources Tabs */ }
+  /* Resources Tabs */
+  /* Contribution Section */ }
   .light-mode a:link,
   .light-mode a:visited {
     color: #1b1b1c; }
@@ -207,6 +230,11 @@ body.blackout-mode {
         color: #f4f3ee; }
         .light-mode #resources .tab-content .btn.active-filter:hover {
           background: #720026; }
+  .light-mode #contribute span a:link,
+  .light-mode #contribute span a:visited {
+    color: #1e555c; }
+  .light-mode #contribute span a:hover {
+    color: #720026; }
 
 /* Fonts & Colors */
 /* Animations */
@@ -239,8 +267,8 @@ header {
   /* Toggle switch */ }
   header nav {
     margin: 0 auto;
-    min-width: 190px;
-    max-width: 200px; }
+    min-width: 290px;
+    max-width: 300px; }
     header nav ul {
       display: flex;
       justify-content: space-around;
@@ -337,10 +365,10 @@ header {
     text-align: justify;
     text-transform: uppercase; }
 
-/* Resources Tabs */
+/* Resources Content */
 #resources {
   margin-top: 35px;
-  /* Style the tab content */ }
+  /* Style the content */ }
   #resources h2 {
     line-height: .30rem; }
   #resources .category {
@@ -352,6 +380,7 @@ header {
     font-weight: 700;
     margin-top: 5px;
     min-width: 80px;
+    max-width: 300px;
     outline: none;
     cursor: pointer;
     padding: 5px 5px;
@@ -361,6 +390,7 @@ header {
   #resources .category-button:hover {
     border-bottom: none; }
   #resources .tab-content {
+    font-size: 1.25rem;
     min-height: 500px;
     overflow: scroll;
     animation: fade 1s;
@@ -369,7 +399,7 @@ header {
     /* The "show" class is added to the filtered elements */
     /* Style the buttons */ }
     #resources .tab-content h3 {
-      line-height: 1rem; }
+      line-height: 1.25rem; }
       #resources .tab-content h3 span {
         display: block; }
     #resources .tab-content h4 {
@@ -383,7 +413,7 @@ header {
     opacity: 1; } }
     #resources .tab-content .tags {
       display: inline-block;
-      font-size: .75rem;
+      font-size: 1rem;
       font-weight: 700;
       margin: 2px 0px 5px 0px;
       padding: 2.5px 5px;
@@ -393,13 +423,14 @@ header {
         opacity: .75;
         transition: .5s; }
     #resources .tab-content a {
+      line-height: 1.75rem;
       margin-right: 5px; }
     #resources .tab-content .filter-buttons {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-around;
-      align-items: center;
       justify-content: flex-start; }
+      #resources .tab-content .filter-buttons .btn {
+        margin-right: 5px; }
     #resources .tab-content .filter-content-container {
       display: flex;
       flex-flow: column wrap;
@@ -408,19 +439,20 @@ header {
     #resources .tab-content .filterLink {
       display: none;
       /* Hide by default */
-      margin: 0; }
+      margin: 0;
+      padding-top: 10px; }
     #resources .tab-content .show {
       display: block; }
     #resources .tab-content .btn {
       background-color: #f1f1f1;
       border: none;
       cursor: pointer;
-      margin-left: 5px;
       outline: none;
-      font-size: .75rem;
+      font-size: 1rem;
       font-weight: 700;
       margin-top: 5px;
       min-width: 80px;
+      max-width: 300px;
       outline: none;
       cursor: pointer;
       padding: 5px 5px;
@@ -429,6 +461,15 @@ header {
       transition: 1s; }
     #resources .tab-content .btn.tags {
       margin: 3px 0px 0px 0px; }
+
+/* Contribution Section */
+#contribute h2 {
+  text-align: center; }
+#contribute p {
+  margin: 0 auto;
+  min-width: 200px;
+  max-width: 320px;
+  text-align: justify; }
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) {

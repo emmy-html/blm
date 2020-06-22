@@ -93,20 +93,20 @@ body.blackout-mode {
   body.blackout-mode a:visited {
     color: #f4f3ee; }
   body.blackout-mode a:hover {
-    border-bottom: 2px solid #2A9D8F;
-    color: #ff9b54;
+    border-bottom: 2px solid #70C1B3;
+    color: #C3B0F7;
     -webkit-transition: 1s color;
     transition: 1s color; }
   body.blackout-mode .active-nav {
-    color: #ff9b54; }
+    color: #C3B0F7; }
     body.blackout-mode .active-nav:visited {
-      color: #ff9b54; }
+      color: #C3B0F7; }
   body.blackout-mode h2 {
-    color: #ff9b54; }
+    color: #C3B0F7; }
   body.blackout-mode #hero .content-container {
     border: 10px solid #2A9D8F; }
     body.blackout-mode #hero .content-container span.black-lives {
-      color: #ff9b54; }
+      color: #C3B0F7; }
   body.blackout-mode #resources {
     /* The Categories */
     /* Category buttons */
@@ -121,24 +121,24 @@ body.blackout-mode {
       background: #2A9D8F;
       color: #1b1b1c; }
       body.blackout-mode #resources .category-button.active-cat:hover {
-        background: #ff9b54;
+        background: #C3B0F7;
         color: #1b1b1c; }
     body.blackout-mode #resources .tab-content {
       /* Filter buttons */ }
       body.blackout-mode #resources .tab-content h3 {
-        color: #ff9b54; }
+        color: #C3B0F7; }
       body.blackout-mode #resources .tab-content h4 span {
         color: #70C1B3; }
       body.blackout-mode #resources .tab-content .tags {
         color: #1b1b1c; }
       body.blackout-mode #resources .tab-content span.tags:nth-of-type(even) {
-        background: #ff9b54;
+        background: #C3B0F7;
         color: #1b1b1c; }
       body.blackout-mode #resources .tab-content span.tags:nth-of-type(odd) {
         background: #2A9D8F;
         color: #1b1b1c; }
       body.blackout-mode #resources .tab-content .btn:hover {
-        background: #ff9b54; }
+        background: #C3B0F7; }
       body.blackout-mode #resources .tab-content .btn:not(.active-filter) {
         color: #f4f3ee; }
         body.blackout-mode #resources .tab-content .btn:not(.active-filter):hover {
@@ -149,7 +149,7 @@ body.blackout-mode {
         background: #2A9D8F;
         color: #1b1b1c; }
         body.blackout-mode #resources .tab-content .btn.active-filter:hover {
-          background: #ff9b54; }
+          background: #C3B0F7; }
   body.blackout-mode #contribute span a:link,
   body.blackout-mode #contribute span a:visited {
     color: #2A9D8F; }

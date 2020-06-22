@@ -3,6 +3,7 @@
     -webkit-transition: 1s color;
     transition: 1s color;
 }
+$teal-border: 2px solid $light-teal;
 
 body.blackout-mode {
     /* Universal Styles */ 
@@ -13,26 +14,26 @@ body.blackout-mode {
         color: $white;
     }
     a:hover {
-        border-bottom: 2px solid $teal;
-        color: $orange;
+        border-bottom: $teal-border;
+        color: $purple;
         @include link-transition;
     }
     /* Active Navigation Link */
     .active-nav {
-        color: $orange;
+        color: $purple;
         &:visited {
-            color: $orange;
+            color: $purple;
         }
     }
     h2 {
-        color: $orange;
+        color: $purple;
     }
     /* Hero */ 
     #hero {
         .content-container {
             border: 10px solid $teal;
             span.black-lives {
-                color: $orange;
+                color: $purple;
             }
         }
     }
@@ -53,13 +54,13 @@ body.blackout-mode {
             background: $teal;
             color: $black;
             &:hover {
-                background: $orange;
+                background: $purple;
                 color: $black;
             }
         }
         .tab-content {
             h3 {
-                color: $orange;
+                color: $purple;
             }
             h4 {
                 span {
@@ -71,7 +72,7 @@ body.blackout-mode {
             }
             span.tags {
                 &:nth-of-type(even) {
-                    background: $orange;
+                    background: $purple;
                     color: $black;
                 }
                 &:nth-of-type(odd) {
@@ -81,7 +82,7 @@ body.blackout-mode {
             }
             /* Filter buttons */ 
             .btn:hover {
-                background: $orange;
+                background: $purple;
             }
             .btn:not(.active-filter) {
                 color: $white;
@@ -95,7 +96,7 @@ body.blackout-mode {
                 background: $teal;
                 color: $black;
                 &:hover {
-                    background: $orange;
+                    background: $purple;
                 }
             }
         }

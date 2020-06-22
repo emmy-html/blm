@@ -3,8 +3,6 @@ $(document).ready(function () {
     $('.fade').fadeIn(1000).removeClass('fade');
 });
 
-// show a category tab by default
-document.getElementById("default").click();
 // toggle color scheme switch
 function toggle() {
     var modeText = document.getElementById("toggle-description");
@@ -65,6 +63,9 @@ if(themeSwitch) {
 $(".about").click(function() {
     $("#about").fadeToggle('linear');
 })
+
+// show a category tab by default
+document.getElementById("default").click();
 // date updated function
 var dateDisplay = document.getElementById("date");
 dateDisplay.innerHTML = "June 22nd, 2020";

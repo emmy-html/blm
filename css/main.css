@@ -111,10 +111,20 @@ body[data-theme="dark"] {
   body[data-theme="dark"] header .toggle-mode #blackout-mode-desc::before {
     content: "Blackout Mode";
     width: 100%; }
-  body[data-theme="dark"] #hero .content-container {
-    border: 10px solid #2A9D8F; }
-    body[data-theme="dark"] #hero .content-container span.black-lives {
-      color: #C3B0F7; }
+  body[data-theme="dark"] #hero {
+    /* Last Updated by Section */ }
+    body[data-theme="dark"] #hero .content-container {
+      border: 10px solid #2A9D8F; }
+      body[data-theme="dark"] #hero .content-container span.black-lives {
+        color: #C3B0F7; }
+    body[data-theme="dark"] #hero #update-content {
+      text-transform: uppercase; }
+      body[data-theme="dark"] #hero #update-content .date {
+        color: #70C1B3;
+        font-weight: 700; }
+      body[data-theme="dark"] #hero #update-content .name {
+        color: #C3B0F7;
+        font-weight: 700; }
   body[data-theme="dark"] #resources {
     /* The Categories */
     /* Category buttons */
@@ -367,7 +377,8 @@ header {
 
 /* Hero */
 #hero {
-  /* Protect Black Lives Intro */ }
+  /* Protect Black Lives Intro */
+  /* Last Updated */ }
   #hero .content-container {
     margin: 0 auto;
     margin-top: 50px;
@@ -384,6 +395,10 @@ header {
     max-width: 320px;
     text-align: justify;
     text-transform: uppercase; }
+  #hero #update-content .date {
+    font-weight: 700; }
+  #hero #update-content .name {
+    font-weight: 700; }
 
 /* Resources Content */
 #resources {

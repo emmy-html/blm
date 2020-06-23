@@ -48,6 +48,8 @@ if(themeSwitch) {
     } 
   };
 }
-// date updated function
-var dateDisplay = document.getElementById("date");
-dateDisplay.innerHTML = "June 22nd, 2020";
+// date updated variables
+const dateDisplay = document.getElementById("date");
+dateDisplay.innerHTML = "06/22/2020";
+const nameDisplay = document.getElementById("name");
+nameDisplay.innerHTML = "Emmy"; 

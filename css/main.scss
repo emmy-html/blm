@@ -236,6 +236,7 @@ header {
         display: block;
     }
   }
+
   aside {
     p {
         margin: 0 auto;
@@ -243,6 +244,15 @@ header {
         max-width: 320px;
         text-align: justify;
         text-transform: uppercase;
+    }
+  }
+  /* Last Updated */
+  #update-content {
+    .date {
+      font-weight: $bold;
+    }
+    .name {
+      font-weight: $bold;
     }
   }
 }

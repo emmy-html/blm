@@ -20,6 +20,7 @@ body[data-theme="dark"] {
     }
     /* Active Navigation Link */
     .active-nav {
+        border-bottom: $teal-border;
         color: $purple;
         &:visited {
             color: $purple;
@@ -117,7 +118,7 @@ body[data-theme="dark"] {
                 background: $teal;
                 color: $black;
                 &:hover {
-                    background: $purple;
+                    background: $light-teal;
                 }
             }
         }

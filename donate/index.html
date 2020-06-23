@@ -27,10 +27,12 @@
       </ul>
     </nav>
     <aside id="about">
-      <p>Protect Black Lives was created by <a href="https://github.com/emmy-html" target="_blank">Emmy Jordan</a> as a
-        resource to educate and spread awareness regarding the police brutality crisis that affects Black lives
-        worldwide. This website will provide racism on how to combat and educate yourself on the consequences of
-        systemic racism, and police brutality.</p>
+      <div class="content-wrapper">
+        <p>Protect Black Lives was created by <a href="https://github.com/emmy-html" target="_blank">Emmy Jordan</a> as a
+          resource to educate and spread awareness regarding the police brutality crisis that affects Black lives
+          worldwide. This website will provide racism on how to combat and educate yourself on the consequences of
+          systemic racism, and police brutality.</p>
+      </div>
     </aside>
     <article class="toggle-mode">
       <p id="light-mode-desc"> </p>
@@ -73,13 +75,13 @@
           <!-- Donation Tag Filters -->
           <h4>Filter by <span>Topic</span></h4>
           <div class="filter-buttons">
-            <button class="btn active-filter" id="default" onclick="findTag('all')">Show all</button>
-            <button class="btn" onclick="findTag('lgbtqia')">LGBTQIA+</button>
-            <button class="btn" onclick="findTag('bail-funds')">Bail Funds</button>
-            <button class="btn" onclick="findTag('black-biz')">Black Business</button>
-            <button class="btn" onclick="findTag('crowd-source')">Crowd Sourcing</button>
-            <button class="btn" onclick="findTag('donation-megalist')">Megalist</button>
-            <button class="btn" onclick="findTag('orgs')">Organization</button>
+            <button class="btn active-filter" id="default" onclick="filterSelection('all')">Show all</button>
+            <button class="btn" onclick="filterSelection('lgbtqia')">LGBTQIA+</button>
+            <button class="btn" onclick="filterSelection('bail-funds')">Bail Funds</button>
+            <button class="btn" onclick="filterSelection('black-biz')">Black Business</button>
+            <button class="btn" onclick="filterSelection('crowd-source')">Crowd Sourcing</button>
+            <button class="btn" onclick="filterSelection('donation-megalist')">Megalist</button>
+            <button class="btn" onclick="filterSelection('orgs')">Organization</button>
           </div>
         </article>
         <article>
@@ -87,7 +89,7 @@
           <div class="filter-content-container">
             <p class="filterLink lgbtqia crowd-source">
               <a href="https://gf.me/u/x9dm4f" target="_blank">Black Trans Education Form</a>
-              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags tag-active-filter" onclick="findTag('lgbtqia')">LGBTQIA+</span>
               <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
             </p>
             <p class="filterLink lgbtqia donation-megalist">
@@ -163,6 +165,7 @@
   </footer>
   <script src="../js/plugins.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/filter.js"></script>
 </body>
 
 </html>

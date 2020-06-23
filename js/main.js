@@ -2,20 +2,13 @@
 $(document).ready(function () {
     $('.fade').fadeIn(1000).removeClass('fade');
 });
-
-// toggle color scheme switch
-function toggle() {
-    var modeText = document.getElementById("toggle-description");
-    var modeToggle = document.getElementById("themeSwitch").checked;
-    if (modeToggle) {
-        modeText.innerHTML = "Blackout Mode";
-    } else {
-        modeText.innerHTML = "Light Mode";
-    }
-}
 // NEW color theme switch
 document.getElementById('themeSwitch').addEventListener('change', function(event){
-    (event.target.checked) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
+    if (event.target.checked) {
+      document.body.setAttribute('data-theme', 'dark');
+    } else {
+       document.body.removeAttribute('data-theme');
+      }
   });
 var themeSwitch = document.getElementById('themeSwitch');
 if(themeSwitch) {

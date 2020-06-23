@@ -18,6 +18,7 @@ body[data-theme="light"] {
         color: $red;
         @include link-transition;
     }
+    /* Header */
     /* Active Navigation Link */
     .active-nav {
         border-bottom: $blue-border;
@@ -28,6 +29,17 @@ body[data-theme="light"] {
     }
     h2 {
         color: $red;
+    }
+    /* Toggle Switch */
+    header {
+        .toggle-mode {
+            #light-mode-desc::before {
+                content: "Light Mode";
+              }
+            #blackout-mode-desc::before {
+                display: none;
+            }
+        }
     }
     /* Hero */
     #hero {

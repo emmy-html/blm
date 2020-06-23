@@ -86,6 +86,8 @@ body[data-theme="dark"] {
   background: #1b1b1c;
   color: #f4f3ee;
   /* Active Navigation Link */
+  /* Toggle Switch */
+  /* Toggle Switch */
   /* Hero */
   /* Resources Tabs */
   /* Contribution Section */ }
@@ -103,6 +105,11 @@ body[data-theme="dark"] {
       color: #C3B0F7; }
   body[data-theme="dark"] h2 {
     color: #C3B0F7; }
+  body[data-theme="dark"] header .toggle-mode #light-mode-desc::before {
+    display: none; }
+  body[data-theme="dark"] header .toggle-mode #blackout-mode-desc::before {
+    content: "Blackout Mode";
+    width: 100%; }
   body[data-theme="dark"] #hero .content-container {
     border: 10px solid #2A9D8F; }
     body[data-theme="dark"] #hero .content-container span.black-lives {
@@ -169,7 +176,9 @@ body[data-theme="light"] {
   /* Universal Styles */
   background: #f4f3ee;
   color: #1b1b1c;
+  /* Header */
   /* Active Navigation Link */
+  /* Toggle Switch */
   /* Hero */
   /* Resources Tabs */
   /* Contribution Section */ }
@@ -188,6 +197,10 @@ body[data-theme="light"] {
       color: #720026; }
   body[data-theme="light"] h2 {
     color: #720026; }
+  body[data-theme="light"] header .toggle-mode #light-mode-desc::before {
+    content: "Light Mode"; }
+  body[data-theme="light"] header .toggle-mode #blackout-mode-desc::before {
+    display: none; }
   body[data-theme="light"] #hero {
     /* Protect Black Lives Intro */ }
     body[data-theme="light"] #hero .content-container {
@@ -274,7 +287,8 @@ header {
   header nav {
     margin: 0 auto;
     min-width: 290px;
-    max-width: 300px; }
+    max-width: 300px;
+    padding: 10px 0px; }
     header nav ul {
       display: flex;
       justify-content: space-around;
@@ -286,11 +300,11 @@ header {
   header .toggle-mode {
     display: flex;
     flex-flow: row nowrap;
+    min-width: 200px;
     max-width: 200px;
-    height: 30px;
-    justify-content: space-between;
+    height: 20px;
+    justify-content: space-evenly;
     align-items: center;
-    padding-top: 10px;
     margin: 0 auto; }
     header .toggle-mode p {
       margin-top: 45px;
@@ -328,12 +342,12 @@ header {
     -webkit-transition: 0.4s;
     transition: 0.4s; }
   header input:checked + .slider {
-    background: #1e555c; }
+    background: #C3B0F7; }
   header input:checked + .slider:before {
     -webkit-transform: translateX(24px);
     -ms-transform: translateX(24px);
     transform: translateX(24px);
-    background-color: #d1ecf0;
+    background-color: #1e555c;
     -webkit-transition: 0.4s;
     transition: 0.4s; }
   header .slider.round {
@@ -342,7 +356,6 @@ header {
     border-radius: 50px; }
   header aside p {
     margin: 0 auto;
-    margin-top: 25px;
     max-width: 320px;
     text-align: justify;
     text-transform: uppercase; }
@@ -402,7 +415,6 @@ header {
   #resources .tab-content {
     font-size: 1.25rem;
     min-height: 500px;
-    overflow: scroll;
     animation: fade 1s;
     /* The resource tags */
     /* Filter through the resources */

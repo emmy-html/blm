@@ -28,6 +28,19 @@ body[data-theme="dark"] {
     h2 {
         color: $purple;
     }
+    /* Toggle Switch */
+    /* Toggle Switch */
+    header {
+        .toggle-mode {
+            #light-mode-desc::before {
+                display: none;
+              }
+            #blackout-mode-desc::before {
+                content: "Blackout Mode";
+                width: 100%;
+            }
+        }
+    }
     /* Hero */ 
     #hero {
         .content-container {

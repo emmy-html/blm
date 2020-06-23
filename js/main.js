@@ -1,7 +1,3 @@
-// fades in content on load
-$(document).ready(function () {
-    $('.fade').fadeIn(1500).removeClass('fade');
-});
 // NEW color theme switch
 document.getElementById('themeSwitch').addEventListener('change', function(event){
     if (event.target.checked) {
@@ -52,12 +48,6 @@ if(themeSwitch) {
     } 
   };
 }
-// toggle the about section
-$(".about").click(function() {
-    $("#about").fadeToggle('linear');
-})
-// show a category tab by default
-document.getElementById("default").click();
 // date updated function
 var dateDisplay = document.getElementById("date");
 dateDisplay.innerHTML = "June 22nd, 2020";

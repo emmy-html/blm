@@ -1,4 +1,6 @@
 // filter functions
+// show a category tab by default
+document.getElementById("default").click();
 // filter through resources
 filterSelection("all")
 function filterSelection(c) {

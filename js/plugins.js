@@ -22,3 +22,11 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+// fades in content on load
+$(document).ready(function () {
+  $('.fade').fadeIn(1500).removeClass('fade');
+});
+// toggle the about section
+$(".about").click(function() {
+  $("#about").fadeToggle('linear');
+})

@@ -78,6 +78,7 @@
           <div class="filter-buttons">
             <button class="btn active-filter" id="default" onclick="filterSelection('all')">Show all</button>
             <button class="btn" onclick="filterSelection('lgbtqia')">LGBTQIA+</button>
+            <button class="btn" onclick="filterSelection('artists')">Artists</button>
             <button class="btn" onclick="filterSelection('bail-funds')">Bail Funds</button>
             <button class="btn" onclick="filterSelection('black-biz')">Black Business</button>
             <button class="btn" onclick="filterSelection('crowd-source')">Crowd Sourcing</button>
@@ -88,9 +89,61 @@
         <article>
           <!-- Donation Resources -->
           <div class="filter-content-container">
+            <p class="filterLink crowd-source lgbtqia orgs">
+              <a href="https://www.blacktranstravelfund.com/donate" target="_blank">
+                Black Trans Travel Fund</a>
+                <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink lgbtqia orgs">
+              <a href="https://marshap.org/" target="_blank">
+                The Marsha P. Johnson Institute</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink artists lgbtqia crowd-source orgs">
+              <a href="https://linktr.ee/btfacollective" target="_blank">
+                Black Trans Femme Artists Collective</a>
+              <span class="btn tags" onclick="findTag('artists')">Artists</span>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+              <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink lgbtqia crowd-source orgs">
+              <a href="https://www.transjusticefundingproject.org/" target="_blank">
+                Trans Justice Funding Project</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+              <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink lgbtqia crowd-source orgs">
+              <a href="https://www.transgenderdistrictsf.com/donate" target="_blank">
+                The Transgender District San Francisco</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+              <span class="btn tags" onclick="findTag('orgs')">Organizations</span>
+            </p>
+            <p class="filterLink lgbtqia crowd-source">
+              <a href="https://gf.me/u/x3kh8h" target="_blank">
+                Homeless Black Trans Women Fund</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+            </p>
+            <p class="filterLink artists lgbtqia crowd-source">
+              <a href="https://www.bonfire.com/store/softprints/" target="_blank">Grayson, Trans Artist, Crowd Funding Top Surgery with Their Original Art</a>
+              <span class="btn tags" onclick="findTag('artists')">Artists</span>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+            </p>
+            <p class="filterLink lgbtqia crowd-source">
+              <a href="https://gf.me/u/x9n66q" target="_blank">Dahlia's Transition Fund</a>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
+            </p>
             <p class="filterLink lgbtqia crowd-source">
               <a href="https://gf.me/u/x9dm4f" target="_blank">Black Trans Education Form</a>
-              <span class="btn tags tag-active-filter" onclick="findTag('lgbtqia')">LGBTQIA+</span>
+              <span class="btn tags" onclick="findTag('lgbtqia')">LGBTQIA+</span>
               <span class="btn tags" onclick="findTag('crowd-source')">Crowd Sourcing</span>
             </p>
             <p class="filterLink lgbtqia donation-megalist">

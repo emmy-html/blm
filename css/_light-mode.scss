@@ -50,6 +50,18 @@ body[data-theme="light"] {
                 color: $red;
             }
         }
+            /* Last Updated by Section */
+    #update-content {
+        text-transform: uppercase;
+        .date {
+            color: $red;
+            font-weight: $bold;
+        }
+        .name {
+            color: $blue;
+            font-weight: $bold;
+        }
+        }
     }
     /* Resources Tabs */
     #resources {

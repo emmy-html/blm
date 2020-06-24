@@ -213,11 +213,20 @@ body[data-theme="light"] {
   body[data-theme="light"] header .toggle-mode #blackout-mode-desc::before {
     display: none; }
   body[data-theme="light"] #hero {
-    /* Protect Black Lives Intro */ }
+    /* Protect Black Lives Intro */
+    /* Last Updated by Section */ }
     body[data-theme="light"] #hero .content-container {
       border: 10px solid #1e555c; }
       body[data-theme="light"] #hero .content-container span.black-lives {
         color: #720026; }
+    body[data-theme="light"] #hero #update-content {
+      text-transform: uppercase; }
+      body[data-theme="light"] #hero #update-content .date {
+        color: #720026;
+        font-weight: 700; }
+      body[data-theme="light"] #hero #update-content .name {
+        color: #1e555c;
+        font-weight: 700; }
   body[data-theme="light"] #resources {
     /* The Categories */
     /* Category buttons */

@@ -249,6 +249,8 @@ body[data-theme="light"] {
       /* Filter buttons */
       /* Add a background color to the button on hover */
       /* Change background to active class */ }
+      body[data-theme="light"] #resources .tab-content span {
+        color: #BC3908; }
       body[data-theme="light"] #resources .tab-content .tags {
         color: #f4f3ee; }
       body[data-theme="light"] #resources .tab-content span.tags:nth-of-type(even) {
@@ -260,20 +262,21 @@ body[data-theme="light"] {
       body[data-theme="light"] #resources .tab-content .btn:hover {
         background: #720026; }
       body[data-theme="light"] #resources .tab-content .btn:not(.active-filter) {
-        background: none; }
-        body[data-theme="light"] #resources .tab-content .btn:not(.active-filter):hover {
-          background: #720026;
-          color: #f4f3ee; }
-      body[data-theme="light"] #resources .tab-content .btn.active-filter {
         background: #1e555c;
         color: #f4f3ee; }
+        body[data-theme="light"] #resources .tab-content .btn:not(.active-filter):hover {
+          background: #BC3908;
+          color: #f4f3ee; }
+      body[data-theme="light"] #resources .tab-content .btn.active-filter {
+        background: #720026;
+        color: #f4f3ee; }
         body[data-theme="light"] #resources .tab-content .btn.active-filter:hover {
-          background: #720026; }
+          background: #BC3908; }
   body[data-theme="light"] #contribute span a:link,
   body[data-theme="light"] #contribute span a:visited {
     color: #1e555c; }
   body[data-theme="light"] #contribute span a:hover {
-    color: #720026; }
+    color: #BC3908; }
 
 /* Fonts & Colors */
 /* Animations */
@@ -447,8 +450,6 @@ header {
     /* Style the buttons */ }
     #resources .tab-content h4 {
       line-height: .10rem; }
-      #resources .tab-content h4 span {
-        color: #1e555c; }
 @keyframes fade {
   from {
     opacity: 0; }
@@ -463,7 +464,6 @@ header {
       text-transform: uppercase; }
       #resources .tab-content .tags:hover {
         cursor: pointer;
-        opacity: .75;
         transition: .5s; }
     #resources .tab-content a {
       line-height: 1.75rem;

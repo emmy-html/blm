@@ -284,9 +284,6 @@ header {
     animation: fade 1s;
     h4 {
       line-height: .10rem;
-      span {
-        color: $blue;
-      }
     }
     @keyframes fade {
       from {
@@ -306,7 +303,6 @@ header {
       text-transform: uppercase;
       &:hover {
         cursor: pointer;
-        opacity: .75;
         transition: .5s;
       }
     }

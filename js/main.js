@@ -50,6 +50,6 @@ if(themeSwitch) {
 }
 // date updated variables
 const dateDisplay = document.getElementById("date");
-dateDisplay.innerHTML = "06/24/2020";
+dateDisplay.innerHTML = "07/07/2020";
 const nameDisplay = document.getElementById("name");
-nameDisplay.innerHTML = "Emmy"; 
+nameDisplay.innerHTML = "Emmy";

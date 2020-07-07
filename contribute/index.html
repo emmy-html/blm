@@ -59,6 +59,47 @@
                 </aside>
             </div>
         </section>
+        <section id="contribute-page">
+          <div class="content-wrapper">
+            <h2>Contribute to Protect Black Lives</h2>
+            <h3>Want to contribute to this project?</h3>
+            <p>There are so many options! First off, thank you so much for wanting to participate in this project. This collection of resources
+              couldn't exist without the help of people like you. Protect Black Lives is an open source project. That means that if you're a developer
+              of any skill level, you can contribute. If you aren't a developer, you can still help out!</p>
+            <h2>For Non-Developers</h2>
+            <p>
+              Want to help, but you don't code? No problem! Use <a href="https://forms.gle/sMTRUnXhTj4hdm127" target="_blank">this form</a>
+              to submit your resource. Please allow at least 24 hours for your submission to be processed and added.
+            </p>
+            <h2>For Developers</h2>
+              <p>If you don't have a resource but you just want to help, feel free to submit a <b>pull request</b> for any bugs and overall suggestions.
+                Even if it's something as simple as a typo, let us know!</p>
+              <p>If you have a resource you would like to add, the approach is pretty straight forward! Once you're all set up and ready to submit a
+                <a href="https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request" target="_blank">pull request</a> 
+                to the <a href="https://github.com/emmy-html/pbl" target="_blank">project repository</a>, follow along with these instructions.
+              </p>
+              <ol>
+                <li>Grab the link to the resource you want to add. Make sure this is a direct link to your content.</li>
+                <li>Create a new branch for your changes. When naming, use the format <span class="code-sample">[username-resource]</span></li>
+                <li>Go to the directory that matches the <b>type</b> of resource you are adding. For example, I'm adding a <b>donation</b>
+                  resource, so I will go to <b>donate/index.html</b>.</li>
+                <li>CTRL F to find <span class="code-sample">p class="filterLink"</span><br>
+                    When you get there, you'll see the code you need to add your resource. Add the link, and change the title accordingly.<br>
+                    Make sure you're adding your resource to the <b>top</b> of the container, <span class="code-sample">filter-content-container</span>.</li>
+                <li>Figure out what category and topic(s) your resource belongs to. Here, we filter things by <b>two</b> criteria.<br>
+                    The <b>type</b> of resource (Donate, Educate, Heal, Petition, or Protest)<br>
+                    And the <b>topics</b> that resource covers. These are the options that you see on the page that allows you to filter through resources.<br>
+                    If you have a resource that has multiple types, feel free to add it to both files.</li>
+                <li>By now, you've probably noticed the <span class="code-sample">span</span> element for the filter buttons. These will allow people to
+                find your resource once you've added it. Add the appropriate tags according to the <b>topics</b> you identified in step 5.<br>
+                * If your topic doesn't exist, feel free to create a new one with an appropriate name!</li>
+                <li>Add a comment <b>above</b> your resource that says <span class="code-sample">Submitted by [your name]"</span></li>
+              </ol>
+              <p>
+                  You're done! Submit your pull request and wait for approval.
+              </p>
+          </div>
+        </section>
     </main>
     <footer>
         <div id="contribute">

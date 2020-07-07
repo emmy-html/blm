@@ -30,6 +30,15 @@ body[data-theme="light"] {
     h2 {
         color: $red;
     }
+    h3 {
+        color: $blue;
+    }
+    b {
+        color: $red;
+    }
+    .code-sample {
+        color: $blue;
+    }
     /* Toggle Switch */
     header {
         .toggle-mode {
@@ -90,7 +99,7 @@ body[data-theme="light"] {
         .tab-content {
             border: none;
             span {
-                color: $orange;
+                color: $dark-purple;
               }
             .tags {
                 color: $white;
@@ -115,7 +124,7 @@ body[data-theme="light"] {
                 background: $blue;
                 color: $white;
                 &:hover {
-                    background: $orange;
+                    background: $dark-purple;
                     color: $white;
                 }
             }
@@ -124,7 +133,7 @@ body[data-theme="light"] {
                 background: $red;
                 color: $white;
                 &:hover {
-                    background: $orange;
+                    background: $dark-purple;
                 }
             }
         }
@@ -137,7 +146,7 @@ body[data-theme="light"] {
               color: $blue;
             }
             a:hover {
-              color: $orange;
+              color: $dark-purple;
             }
           }
     }

@@ -257,7 +257,8 @@ header {
   }
 }
 /* Resources Content */
-#resources {
+#resources,
+#contribute-page {
   margin-top: 35px;
   h2 {
     line-height: .30rem;
@@ -348,6 +349,19 @@ header {
     }
   }
 }
+/* Contribute Page */ 
+#contribute-page {
+  font-size: 1.25rem;
+  .content-wrapper {
+    h2, h3 {
+      text-align: center;
+    }
+  }
+  span.code-sample {
+    letter-spacing: .10rem;
+    font-weight: $bold;
+  }
+}
 /* Footer + Contribution Section */
 #contribute {
   margin: 25px 0px;
@@ -363,7 +377,8 @@ header {
 }
 /* Tablet Styles */ 
 @media screen and (min-width: 768px) {
-  #resources {
+  #resources,
+  #contribute-page {
     min-width: 600px;
     max-width: 650px;
     margin: 0 auto;
@@ -375,7 +390,8 @@ header {
 }
 /* Desktop Styles */ 
 @media screen and (min-width: 1200px) {
-  #resources {
+  #resources,
+  #contribute-page {
     min-width: 1000px;
     max-width: 1100px;
     .category-button {

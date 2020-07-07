@@ -29,7 +29,15 @@ body[data-theme="dark"] {
     h2 {
         color: $purple;
     }
-    /* Toggle Switch */
+    h3 {
+        color: $light-teal;
+    }
+    b {
+        color: $light-teal;
+    }
+    .code-sample {
+        color: $purple;
+    }
     /* Toggle Switch */
     header {
         .toggle-mode {
